@@ -22,8 +22,7 @@
   },
   "keywords": [
     "node",
-    "angular",
-    "mongodb"
+    "angular"
   ],
   "author": "Juan Manuel Lopez Pazos",
   "license": "MIT",
