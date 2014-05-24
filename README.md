@@ -1,5 +1,5 @@
 #Español#
-####La base de este proyecto fue tomado de https://github.com/braitsch/node-login .
+####La base de este proyecto fue tomada de https://github.com/braitsch/node-login .
 
 
 
