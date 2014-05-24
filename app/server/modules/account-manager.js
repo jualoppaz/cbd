@@ -7,9 +7,9 @@ var moment 		= require('moment');
 var dbPort, dbHost, dbName;
 
 if (process.env.MONGOHQ_URL){
-    dbPort      = 10057;
-    dbHost      = "oceanic.mongohq.com";
-    dbName      = "cbd";
+    dbPort      = process.env.MONGOHQ_URL.port;
+    dbHost      = process.env.MONGOHQ_URL.host;
+    dbName      = process.env.MONGOHQ_URL.databaseName;
 }else{
     dbPort      = 27017;
     dbHost 		= 'localhost';
