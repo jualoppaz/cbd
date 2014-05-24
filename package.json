@@ -1,17 +1,18 @@
 {
-	"name": "node-login",
-	"version": "1.3.2",
-	"description": "A template for quickly building login systems on top of Node.js & MongoDb",
+	"name": "cbd",
+	"version": "0.0.1",
+	"description": "Un proyecto en el que alumnos de un colegio se pueden apuntar a las excursiones disponibles.
+					Proyecto desarrollado con NodeJS, AngularJS, MondoDB y Jade.",
 	"author": {
-		"name": "Stephen Braitsch",
-		"email": "stephen@braitsch.io"
+		"name": "Juan Manuel López",
+		"email": "juanmalp1992@gmail.com"
 	},
 	"website":{
-		"url": "node-login.braitsch.io"
+		"url": "http://juanmanuellopezpazos.appspot.com"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/braitsch/node-login.git"
+		"url": "git://github.com/jualoppaz/cbd.git"
 	},
 	"private": true,
 	"dependencies": {
@@ -23,7 +24,6 @@
 		"emailjs": "0.3.3"
 	},
 	"engines": {
-		"node": "0.8.14",
-		"npm":  "1.1.65"
+		"node": "0.10.x",
 	}
 }
