@@ -1,28 +1,37 @@
 {
-	"name": "cbd",
-	"version": "0.0.1",
-	"description": "Un proyecto en el que alumnos de un colegio se pueden apuntar a las excursiones disponibles. Proyecto desarrollado con NodeJS, AngularJS, MondoDB y Jade.",
-	"author": {
-		"name": "Juan Manuel L�pez",
-		"email": "juanmalp1992@gmail.com"
-	},
-	"website":{
-		"url": "http://juanmanuellopezpazos.appspot.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/jualoppaz/cbd.git"
-	},
-	"private": true,
-	"dependencies": {
-		"express": "3.0.6",
-		"stylus": "0.31.0",
-		"jade": "0.27.7",
-		"mongodb": "1.2.7",
-		"moment" : "1.7.2",
-		"emailjs": "0.3.3"
-	},
-	"engines": {
-		"node": "0.10.x"
-	}
+  "name": "cbd",
+  "version": "0.0.1",
+  "description": "Proyecto con NodeJS, AngularJS, MongoDB y Jade.",
+  "main": "app.js",
+  "dependencies": {
+    "emailjs": "~0.3.3",
+    "express": "~3.0.6",
+    "jade": "~0.27.7",
+    "moment": "~1.7.2",
+    "mongodb": "~1.2.7",
+    "mongoose": "~3.8.11",
+    "stylus": "~0.31.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jualoppaz/cbd.git"
+  },
+  "keywords": [
+    "node",
+    "angular",
+    "mongodb"
+  ],
+  "author": "Juan Manuel Lopez Pazos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jualoppaz/cbd/issues"
+  },
+  "homepage": "https://github.com/jualoppaz/cbd",
+   "engines": {
+    "node": "0.10.x"
+  }
 }
