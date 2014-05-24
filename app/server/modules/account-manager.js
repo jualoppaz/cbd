@@ -15,6 +15,9 @@ if (process.env.MONGOHQ_URL){
     dbHost 		= 'localhost';
     dbName 		= 'cbd';
 }
+console.log("Puerto: " + dbPort);
+console.log("DbHost: " + dbHost);
+console.log("dbName: " + dbName);
 
 /* establish the database connection */
 
