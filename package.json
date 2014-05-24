@@ -1,10 +1,9 @@
 {
 	"name": "cbd",
 	"version": "0.0.1",
-	"description": "Un proyecto en el que alumnos de un colegio se pueden apuntar a las excursiones disponibles.
-					Proyecto desarrollado con NodeJS, AngularJS, MondoDB y Jade.",
+	"description": "Un proyecto en el que alumnos de un colegio se pueden apuntar a las excursiones disponibles. Proyecto desarrollado con NodeJS, AngularJS, MondoDB y Jade.",
 	"author": {
-		"name": "Juan Manuel López",
+		"name": "Juan Manuel Lï¿½pez",
 		"email": "juanmalp1992@gmail.com"
 	},
 	"website":{
