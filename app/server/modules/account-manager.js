@@ -1,17 +1,22 @@
 
 var crypto 		= require('crypto');
-//var MongoDB 	= require('mongodb').Db;
-//var Server 		= require('mongodb').Server;
+var MongoDB 	= require('mongodb').Db;
+var Server 		= require('mongodb').Server;
 var moment 		= require('moment');
 var mongoose    = require('mongoose');
 
-/*
+
 var dbPort, dbHost, dbName;
 
-if (process.env.MONGOHQ_URL){
+if (!process.env.MONGOHQ_URL){
+    /*
     dbPort      = process.env.MONGOHQ_URL.port;
     dbHost      = process.env.MONGOHQ_URL.host;
     dbName      = process.env.MONGOHQ_URL.databaseName;
+    */
+    dbPort      = 10057;
+    dbHost      = "oceanic.mongohq.com";
+    dbName      = "cbd";
 }else{
     dbPort      = 27017;
     dbHost 		= 'localhost';
@@ -27,17 +32,29 @@ var db = new MongoDB(dbName, new Server(dbHost, dbPort, {auto_reconnect: true}),
 		console.log(e);
 	}	else{
 		console.log('connected to database :: ' + dbName);
+
+        if(process.env.MONGOHQ_URL){
+            db.authenticate('jualoppaz', 'US92AY6J', function(err, result){
+                if(err){
+                    console.log("Error en la autenticacion");
+                }else{
+                    console.log("Autenticado");
+                }
+            });
+        }
 	}
 });
+
 var accounts = db.collection('accounts');
 
-*/
-
+/*
 if (process.env.MONGOHQ_URL){
-    mongoose.connect(process.env.MONGOHQ_URL);
+    //mongoose.connect(process.env.MONGOHQ_URL);
 }else{
-    mongoose.connect('mongodb://localhost:27017/psi7');
+    //mongoose.connect('mongodb://localhost:27017/psi7');
+    mongoose.connect('mongodb://jualoppaz:US92AY6J@oceanic.mongohq.com:10057/cbd');
 }
+*/
 
 /* login validation methods */
 
@@ -86,6 +103,9 @@ exports.addNewAccount = function(newData, callback)
 					// append date stamp when record was created //
 						newData.date = moment().format('MMMM Do YYYY, h:mm:ss a');
 						accounts.insert(newData, {safe: true}, callback);
+                        if(e){
+                            console.log("Error: " + e);
+                        }
 					});
 				}
 			});

@@ -32,12 +32,15 @@ app.configure('development', function(){
 
 require('./app/server/router')(app);
 
-/*
+
 http.createServer(app).listen(app.get('port'), function(){
 	console.log("Express server listening on port " + app.get('port'));
 });
-*/
 
+
+
+/*
 app.listen(port, function() {
     console.log("Express server listening on port " + app.get('port'));
 });
+*/

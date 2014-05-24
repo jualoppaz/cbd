@@ -26,7 +26,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="2" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="816">
+            <state line="34" column="0" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0" vertical-offset="409" max-vertical-offset="867">
               <folding />
             </state>
           </provider>
@@ -44,16 +44,7 @@
       <file leaf-file-name="account-manager.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/server/modules/account-manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="24" selection-start="438" selection-end="438" vertical-scroll-proportion="0.65384614" vertical-offset="0" max-vertical-offset="3859">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="13" selection-start="563" selection-end="563" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="714">
+            <state line="47" column="41" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.9128205" vertical-offset="443" max-vertical-offset="4199">
               <folding />
             </state>
           </provider>
@@ -79,9 +70,9 @@
         <option value="$PROJECT_DIR$/client/js/controllers.js" />
         <option value="$PROJECT_DIR$/client/js/app.js" />
         <option value="$PROJECT_DIR$/app/server/modules/email-dispatcher.js" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/app/server/modules/account-manager.js" />
-        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -377,20 +368,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="2" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="563" selection-end="563" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/server/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="22" selection-start="21" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3264">
@@ -398,9 +375,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0" vertical-offset="409" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="563" selection-end="563" vertical-scroll-proportion="1.1208792" vertical-offset="0" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/server/modules/account-manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="24" selection-start="438" selection-end="438" vertical-scroll-proportion="0.65384614" vertical-offset="0" max-vertical-offset="3859">
+        <state line="47" column="41" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.9128205" vertical-offset="443" max-vertical-offset="4199">
           <folding />
         </state>
       </provider>
