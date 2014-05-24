@@ -4,9 +4,17 @@ var MongoDB 	= require('mongodb').Db;
 var Server 		= require('mongodb').Server;
 var moment 		= require('moment');
 
-var dbPort 		= 27017;
-var dbHost 		= 'localhost';
-var dbName 		= 'node-login';
+var dbPort, dbHost, dbName;
+
+if (process.env.MONGOHQ_URL){
+    dbPort      = 10057;
+    dbHost      = "oceanic.mongohq.com";
+    dbName      = "cbd";
+}else{
+    dbPort      = 27017;
+    dbHost 		= 'localhost';
+    dbName 		= 'cbd';
+}
 
 /* establish the database connection */
 
