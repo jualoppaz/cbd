@@ -8,7 +8,7 @@ var mongoose    = require('mongoose');
 
 var dbPort, dbHost, dbName;
 
-if (!process.env.MONGOHQ_URL){
+if (process.env.MONGOHQ_URL){
     /*
     dbPort      = process.env.MONGOHQ_URL.port;
     dbHost      = process.env.MONGOHQ_URL.host;
