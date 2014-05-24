@@ -23,10 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/server/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="7" selection-start="733" selection-end="733" vertical-scroll-proportion="0.68686867" vertical-offset="0" max-vertical-offset="3264">
+            <state line="24" column="7" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3264">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="24" selection-start="650" selection-end="650" vertical-scroll-proportion="0.75495493" vertical-offset="6" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
@@ -295,13 +304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="113" selection-start="149" selection-end="149" vertical-scroll-proportion="0.09189189" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="29" selection-start="397" selection-end="397" vertical-scroll-proportion="0.34175083" vertical-offset="86" max-vertical-offset="714">
@@ -311,7 +313,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/server/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="7" selection-start="733" selection-end="733" vertical-scroll-proportion="0.68686867" vertical-offset="0" max-vertical-offset="3264">
+        <state line="24" column="7" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3264">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="24" selection-start="650" selection-end="650" vertical-scroll-proportion="0.75495493" vertical-offset="6" max-vertical-offset="561">
           <folding />
         </state>
       </provider>
