@@ -17,6 +17,8 @@ if (process.env.MONGOHQ_URL){
     dbPort      = 10057;
     dbHost      = "oceanic.mongohq.com";
     dbName      = "cbd";
+	dbUser      = process.env.MONGOHQ_URL.user;
+	dbPass      = process.env.MONGOHQ_URL.pass;
 }else{
     dbPort      = 27017;
     dbHost 		= 'localhost';
@@ -25,6 +27,8 @@ if (process.env.MONGOHQ_URL){
 console.log("Puerto: " + dbPort);
 console.log("DbHost: " + dbHost);
 console.log("dbName: " + dbName);
+console.log("dbUser: " + dbUser);
+console.log("dbPass: " + dbPass);
 
 var db = new MongoDB(dbName, new Server(dbHost, dbPort, {auto_reconnect: true}), {w: 1});
 	db.open(function(e, d){
