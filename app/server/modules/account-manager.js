@@ -35,7 +35,8 @@ var db = new MongoDB(dbName, new Server(dbHost, dbPort, {auto_reconnect: true}),
 		console.log('connected to database :: ' + dbName);
 
         if(process.env.MONGOHQ_URL){
-            db.authenticate(process.env.MONGOHQ_URL.username, process.evn.MONGOHQ_URL.pass, function(err, result){
+            //db.authenticate(process.env.MONGOHQ_URL.username, process.evn.MONGOHQ_URL.pass, function(err, result){
+            db.authenticate('jualoppaz', 'US92AY6J', function(err, result){
                 if(err){
                     console.log("Error en la autenticacion");
                 }else{
