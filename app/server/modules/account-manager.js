@@ -9,13 +9,14 @@ var mongoose    = require('mongoose');
 var dbPort, dbHost, dbName, dbUser, dbPass;
 
 if (process.env.MONGOHQ_URL){
-
-    dbPort      = 10057;
-    dbHost      = "oceanic.mongohq.com";
-    dbName      = "cbd";
-    dbUser      = String(process.env.MONGOHQ_URL.username);
-    dbPass      = String(process.env.MONGOHQ_URL.pass);
+    var elems   = String(process.env.MONGOHQ_URL).split(":");
+    dbPort      = Number(elems[elems.length-1].split("/")[0]);
+    dbHost      = elems[2].split("@")[1];
+    dbName      = elems[elems.length-1].split("/")[1];
+    dbUser      = elems[1].split("//")[1];
+    dbPass      = elems[2].split("@")[0];
 }else{
+
     dbPort      = 27017;
     dbHost 		= 'localhost';
     dbName 		= 'cbd';
