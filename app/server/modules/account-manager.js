@@ -9,24 +9,21 @@ var mongoose    = require('mongoose');
 var dbPort, dbHost, dbName, dbUser, dbPass;
 
 if (process.env.MONGOHQ_URL){
-    /*
-	dbPort      = 10057;
+	/*
+    dbPort      = 10057;
     dbHost      = "oceanic.mongohq.com";
     dbName      = "cbd";
-	*/
+    */
+
     dbPort      = process.env.MONGOHQ_URL.port;
     dbHost      = process.env.MONGOHQ_URL.host;
-    dbName      = process.env.MONGOHQ_URL.databaseName;
-    
-	/*
-	dbUser      = process.env.MONGOHQ_URL.user;
-	dbPass      = process.env.MONGOHQ_URL.pass;
-	*/
+    dbName      = String(process.env.MONGOHQ_URL.databaseName);
 }else{
     dbPort      = 27017;
     dbHost 		= 'localhost';
     dbName 		= 'cbd';
 }
+
 console.log("Puerto: " + dbPort);
 console.log("DbHost: " + dbHost);
 console.log("dbName: " + dbName);
@@ -53,15 +50,6 @@ var db = new MongoDB(dbName, new Server(dbHost, dbPort, {auto_reconnect: true}),
 });
 
 var accounts = db.collection('accounts');
-
-/*
-if (process.env.MONGOHQ_URL){
-    //mongoose.connect(process.env.MONGOHQ_URL);
-}else{
-    //mongoose.connect('mongodb://localhost:27017/psi7');
-    mongoose.connect('mongodb://jualoppaz:US92AY6J@oceanic.mongohq.com:10057/cbd');
-}
-*/
 
 /* login validation methods */
 
