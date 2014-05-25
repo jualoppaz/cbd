@@ -10,15 +10,18 @@ var dbPort, dbHost, dbName, dbUser, dbPass;
 
 if (process.env.MONGOHQ_URL){
     /*
+	dbPort      = 10057;
+    dbHost      = "oceanic.mongohq.com";
+    dbName      = "cbd";
+	*/
     dbPort      = process.env.MONGOHQ_URL.port;
     dbHost      = process.env.MONGOHQ_URL.host;
     dbName      = process.env.MONGOHQ_URL.databaseName;
-    */
-    dbPort      = 10057;
-    dbHost      = "oceanic.mongohq.com";
-    dbName      = "cbd";
+    
+	/*
 	dbUser      = process.env.MONGOHQ_URL.user;
 	dbPass      = process.env.MONGOHQ_URL.pass;
+	*/
 }else{
     dbPort      = 27017;
     dbHost 		= 'localhost';
