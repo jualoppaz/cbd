@@ -13,8 +13,8 @@ if (process.env.MONGOHQ_URL){
     dbPort      = 10057;
     dbHost      = "oceanic.mongohq.com";
     dbName      = "cbd";
-
-
+    dbUser      = String(process.env.MONGOHQ_URL.username);
+    dbPass      = String(process.env.MONGOHQ_URL.pass);
 }else{
     dbPort      = 27017;
     dbHost 		= 'localhost';
@@ -35,8 +35,8 @@ var db = new MongoDB(dbName, new Server(dbHost, dbPort, {auto_reconnect: true}),
 		console.log('connected to database :: ' + dbName);
 
         if(process.env.MONGOHQ_URL){
-            //db.authenticate(process.env.MONGOHQ_URL.username, process.evn.MONGOHQ_URL.pass, function(err, result){
-            db.authenticate('jualoppaz', 'US92AY6J', function(err, result){
+            db.authenticate(dbUser, dbPass, function(err, result){
+            //db.authenticate('jualoppaz', 'US92AY6J', function(err, result){
                 if(err){
                     console.log("Error en la autenticacion");
                 }else{

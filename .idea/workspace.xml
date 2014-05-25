@@ -44,7 +44,7 @@
       <file leaf-file-name="account-manager.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/server/modules/account-manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="50" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.65824914" vertical-offset="255" max-vertical-offset="4080">
+            <state line="42" column="43" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.85858583" vertical-offset="204" max-vertical-offset="4080">
               <folding />
             </state>
           </provider>
@@ -420,7 +420,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/server/modules/account-manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="50" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.65824914" vertical-offset="255" max-vertical-offset="4080">
+        <state line="42" column="43" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.85858583" vertical-offset="204" max-vertical-offset="4080">
           <folding />
         </state>
       </provider>
