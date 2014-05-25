@@ -6,7 +6,7 @@ var moment 		= require('moment');
 var mongoose    = require('mongoose');
 
 
-var dbPort, dbHost, dbName;
+var dbPort, dbHost, dbName, dbUser, dbPass;
 
 if (process.env.MONGOHQ_URL){
     /*
@@ -34,7 +34,7 @@ var db = new MongoDB(dbName, new Server(dbHost, dbPort, {auto_reconnect: true}),
 		console.log('connected to database :: ' + dbName);
 
         if(process.env.MONGOHQ_URL){
-            db.authenticate('jualoppaz', 'US92AY6J', function(err, result){
+            db.authenticate(process.env.MONGOHQ_URL.user, process.evn.MONGOHQ_URL.pass, function(err, result){
                 if(err){
                     console.log("Error en la autenticacion");
                 }else{
