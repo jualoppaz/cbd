@@ -24,6 +24,7 @@ app.configure(function(){
 	app.use(express.methodOverride());
 	app.use(require('stylus').middleware({ src: __dirname + '/app/public' }));
 	app.use(express.static(__dirname + '/app/public'));
+    app.use(express.static(__dirname + '/app/public/js'));
 });
 
 app.configure('development', function(){

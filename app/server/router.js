@@ -1,7 +1,46 @@
 
-var CT = require('./modules/country-list');
-var AM = require('./modules/account-manager');
-var EM = require('./modules/email-dispatcher');
+var CT           = require('./modules/country-list');
+var DBM          = require('./modules/data-base-manager');
+var EM           = require('./modules/email-dispatcher');
+var mongoose     = require('mongoose'),
+    Schema       = mongoose.Schema,
+    relationship = require('mongoose-relationship');
+
+/*
+
+var UsuarioSchema = new Schema({
+    nombre:     String,
+    nick:       String,
+    contrasena: String,
+    email:      String,
+    pais:       String
+});
+
+var Account    = mongoose.model("Account", UsuarioSchema);
+
+var ComentarioSchema = new Schema({
+    texto: String,
+    usuario: {type:Schema.ObjectId, ref:"Account"}
+});
+
+var Comentario = mongoose.model("Comentario", ComentarioSchema);
+*/
+
+/*
+var ExcursionSchema = new Schema({
+    titulo: String,
+    lugar:  String,
+    precio: String
+    //comentarios : [Comentario]
+});
+
+var Excursion  = mongoose.model("excursiones", ExcursionSchema);*/
+
+var Trip = mongoose.model('Trip', {
+    titulo: String,
+    lugar:  String,
+    precio: String
+});
 
 module.exports = function(app) {
 
@@ -13,10 +52,11 @@ module.exports = function(app) {
 			res.render('login', { title: 'Hello - Please Login To Your Account' });
 		}	else{
 	// attempt automatic login //
-			AM.autoLogin(req.cookies.user, req.cookies.pass, function(o){
+			DBM.autoLogin(req.cookies.user, req.cookies.pass, function(o){
 				if (o != null){
 				    req.session.user = o;
-					res.redirect('/home');
+					//res.redirect('/home');
+                    res.redirect('/index')
 				}	else{
 					res.render('login', { title: 'Hello - Please Login To Your Account' });
 				}
@@ -25,7 +65,7 @@ module.exports = function(app) {
 	});
 	
 	app.post('/', function(req, res){
-		AM.manualLogin(req.param('user'), req.param('pass'), function(e, o){
+		DBM.manualLogin(req.param('user'), req.param('pass'), function(e, o){
 			if (!o){
 				res.send(e, 400);
 			}	else{
@@ -56,7 +96,7 @@ module.exports = function(app) {
 	
 	app.post('/home', function(req, res){
 		if (req.param('user') != undefined) {
-			AM.updateAccount({
+			DBM.updateAccount({
 				user 		: req.param('user'),
 				name 		: req.param('name'),
 				email 		: req.param('email'),
@@ -81,6 +121,48 @@ module.exports = function(app) {
 			req.session.destroy(function(e){ res.send('ok', 200); });
 		}
 	});
+
+
+    app.get('/index', function(req, res) {
+        if (req.session.user == null){
+            // if user is not logged-in redirect back to login page //
+            res.redirect('/');
+        }   else{
+            res.render('index', {
+                title : 'Control Panel',
+                countries : CT,
+                udata : req.session.user
+            });
+        }
+    });
+
+    app.post('/index', function(req, res){
+        if (req.param('user') != undefined) {
+            DBM.updateAccount({
+                user 		: req.param('user'),
+                name 		: req.param('name'),
+                email 		: req.param('email'),
+                country 	: req.param('country'),
+                pass		: req.param('pass')
+            }, function(e, o){
+                if (e){
+                    res.send('error-updating-account', 400);
+                }	else{
+                    req.session.user = o;
+                    // update the user's login cookies if they exists //
+                    if (req.cookies.user != undefined && req.cookies.pass != undefined){
+                        res.cookie('user', o.user, { maxAge: 900000 });
+                        res.cookie('pass', o.pass, { maxAge: 900000 });
+                    }
+                    res.send('ok', 200);
+                }
+            });
+        }	else if (req.param('logout') == 'true'){
+            res.clearCookie('user');
+            res.clearCookie('pass');
+            req.session.destroy(function(e){ res.send('ok', 200); });
+        }
+    });
 	
 // creating new accounts //
 	
@@ -89,7 +171,7 @@ module.exports = function(app) {
 	});
 	
 	app.post('/signup', function(req, res){
-		AM.addNewAccount({
+		DBM.addNewAccount({
 			name 	: req.param('name'),
 			email 	: req.param('email'),
 			user 	: req.param('user'),
@@ -108,7 +190,7 @@ module.exports = function(app) {
 
 	app.post('/lost-password', function(req, res){
 	// look up the user's account via their email //
-		AM.getAccountByEmail(req.param('email'), function(o){
+		DBM.getAccountByEmail(req.param('email'), function(o){
 			if (o){
 				res.send('ok', 200);
 				EM.dispatchResetPasswordLink(o, function(e, m){
@@ -130,7 +212,7 @@ module.exports = function(app) {
 	app.get('/reset-password', function(req, res) {
 		var email = req.query["e"];
 		var passH = req.query["p"];
-		AM.validateResetLink(email, passH, function(e){
+		DBM.validateResetLink(email, passH, function(e){
 			if (e != 'ok'){
 				res.redirect('/');
 			} else{
@@ -147,7 +229,7 @@ module.exports = function(app) {
 		var email = req.session.reset.email;
 	// destory the session immediately after retrieving the stored email //
 		req.session.destroy();
-		AM.updatePassword(email, nPass, function(e, o){
+		DBM.updatePassword(email, nPass, function(e, o){
 			if (o){
 				res.send('ok', 200);
 			}	else{
@@ -159,13 +241,13 @@ module.exports = function(app) {
 // view & delete accounts //
 	
 	app.get('/print', function(req, res) {
-		AM.getAllRecords( function(e, accounts){
+		DBM.getAllRecords( function(e, accounts){
 			res.render('print', { title : 'Account List', accts : accounts });
 		})
 	});
 	
 	app.post('/delete', function(req, res){
-		AM.deleteAccount(req.body.id, function(e, obj){
+		DBM.deleteAccount(req.body.id, function(e, obj){
 			if (!e){
 				res.clearCookie('user');
 				res.clearCookie('pass');
@@ -177,10 +259,32 @@ module.exports = function(app) {
 	});
 	
 	app.get('/reset', function(req, res) {
-		AM.delAllRecords(function(){
+		DBM.delAllRecords(function(){
 			res.redirect('/print');	
 		});
 	});
+
+
+    // queries
+
+    app.get('/api/trips', function(req, res) {
+        DBM.findAllTrips(function(err, excursiones){
+            console.log("Paso x aki");
+            if(err) {
+                res.send(err);
+            }
+            res.json(excursiones);
+        });
+    });
+
+    app.get('/api/trips/:id', function(req, res) {
+        DBM.findTripById(req.params.id, function(err, excursion){
+           if(err){
+               res.send(err);
+           }
+           res.json(excursion);
+       });
+    });
 	
 	app.get('*', function(req, res) { res.render('404', { title: 'Page Not Found'}); });
 
