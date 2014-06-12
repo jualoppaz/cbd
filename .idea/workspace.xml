@@ -41,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.jade" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/server/views/login.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="57" selection-start="85" selection-end="85" vertical-scroll-proportion="0.11950791" vertical-offset="0" max-vertical-offset="680">
+            <state line="13" column="64" selection-start="575" selection-end="592" vertical-scroll-proportion="-8.84" vertical-offset="0" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="data-base-manager.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="50" selection-start="5679" selection-end="5679" vertical-scroll-proportion="0.0" vertical-offset="3996" max-vertical-offset="4590">
+            <state line="240" column="41" selection-start="5626" selection-end="5626" vertical-scroll-proportion="0.0" vertical-offset="3723" max-vertical-offset="4590">
               <folding />
             </state>
           </provider>
@@ -70,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="starter-template.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="starter-template.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/public/css/starter-template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1699" column="19" selection-start="27971" selection-end="27971" vertical-scroll-proportion="0.0" vertical-offset="28336" max-vertical-offset="29002">
+            <state line="1706" column="0" selection-start="28016" selection-end="28016" vertical-scroll-proportion="0.9414802" vertical-offset="28455" max-vertical-offset="29104">
               <folding />
             </state>
           </provider>
@@ -111,10 +111,10 @@
         <option value="$PROJECT_DIR$/app/server/router.js" />
         <option value="$PROJECT_DIR$/app/public/js/angular/angularTravel.js" />
         <option value="$PROJECT_DIR$/app/server/views/layout.jade" />
-        <option value="$PROJECT_DIR$/app/public/css/starter-template.css" />
         <option value="$PROJECT_DIR$/app/server/modules/data-base-manager.js" />
         <option value="$PROJECT_DIR$/app/server/views/index.jade" />
         <option value="$PROJECT_DIR$/app/server/views/login.jade" />
+        <option value="$PROJECT_DIR$/app/public/css/starter-template.css" />
       </list>
     </option>
   </component>
@@ -318,6 +318,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="form-validators" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WS_CBD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WS_CBD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -398,7 +424,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistory" value="sorry&#10;/home&#10;this view is&#10;csrf&#10;req.session._csrf&#10;req.csrf._session" />
+    <property name="SearchEverywhereHistory" value="&#10;account-manager&#10;sorry&#10;/home&#10;this view is&#10;csrf&#10;req.session._csrf&#10;req.csrf._session" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -658,7 +684,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/views/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918" />
+        <state line="3" column="22" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/controllers/homeController.js">
@@ -728,23 +756,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/css/starter-template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1699" column="19" selection-start="27971" selection-end="27971" vertical-scroll-proportion="0.0" vertical-offset="28336" max-vertical-offset="29002">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/server/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="213" column="35" selection-start="5909" selection-end="5909" vertical-scroll-proportion="-123.4" vertical-offset="536" max-vertical-offset="5032">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="50" selection-start="5679" selection-end="5679" vertical-scroll-proportion="0.0" vertical-offset="3996" max-vertical-offset="4590">
           <folding />
         </state>
       </provider>
@@ -756,9 +770,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/js/form-validators/accountValidator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.4870912" vertical-offset="864" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="240" column="41" selection-start="5626" selection-end="5626" vertical-scroll-proportion="0.0" vertical-offset="3723" max-vertical-offset="4590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/server/views/login.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="57" selection-start="85" selection-end="85" vertical-scroll-proportion="0.11950791" vertical-offset="0" max-vertical-offset="680">
+        <state line="13" column="64" selection-start="575" selection-end="592" vertical-scroll-proportion="-8.84" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/css/starter-template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1706" column="0" selection-start="28016" selection-end="28016" vertical-scroll-proportion="0.9414802" vertical-offset="28455" max-vertical-offset="29104">
           <folding />
         </state>
       </provider>
