@@ -3,8 +3,8 @@ var CT           = require('./modules/country-list');
 var DBM          = require('./modules/data-base-manager');
 var EM           = require('./modules/email-dispatcher');
 var mongoose     = require('mongoose'),
-    Schema       = mongoose.Schema,
-    relationship = require('mongoose-relationship');
+    Schema       = mongoose.Schema/*,
+    relationship = require('mongoose-relationship')*/;
 
 /*
 
