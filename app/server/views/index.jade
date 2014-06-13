@@ -16,11 +16,11 @@ block content
                 h1(style="text-align: center").red Excursiones disponibles
             div.panel.panel-body.terms-and-conditions.col-md-8.col-md-offset-2(ng-repeat="excursion in excursiones", style="text-align:center")
                 div(style="text-align:left")
-                    h1(style="margin-bottom:30px",ng-bind-template="{{$index + 1}}. ({{excursion.title}} {{excursion.moment | date:'dd/MM/yyyy'}})").green
+                    h1(style="margin-bottom:30px",ng-bind-template="{{$index + 1}}. {{excursion.title}} ({{excursion.moment | date:'dd/MM/yyyy'}})").green
                 div(style="float:left; margin-right: 20px")
                     img(src="/img/{{excursion.image}}", height="200", width="300", style="margin-left: 10px; margin-bottom: 10px")
                 div(style="margin-left: 10px;")
-                    h3(style="text-align:justify; margin-top: 0px", ng-bind-template="{{excursion.description}}").blue 
+                    h3(style="text-align:justify; margin-top: 0px", ng-bind-template="{{excursion.description}}").blue
     include modals/alert
     include modals/confirm
 
