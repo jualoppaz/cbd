@@ -53,7 +53,7 @@ function HomeController()
 		$('.modal-alert .modal-body p').html(msg);
 		$('.modal-alert').modal('show');
 		$('.modal-alert button').click(function(){window.location.href = '/';})
-		setTimeout(function(){window.location.href = '/';}, 3000);
+		setTimeout(function(){window.location.href = '/';}, 1000);
 	}
 }
 

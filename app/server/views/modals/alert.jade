@@ -7,3 +7,14 @@
         p
     div.modal-footer
         button(data-dismiss="modal")#ok.btn.btn-warning OK
+
+div.modal.fade#myModal(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+    div.modal-dialog
+        div.modal-content
+            div.modal-header
+                button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+                h4.modal-title#myModalLabel Cerrando sesión
+            div.modal-body A continuación será redirigido a la página de inicio de la aplicación.
+            div.modal-footer
+                //button.btn.btn-default(type="button", data-dismiss="modal") Close
+                //button.btn.btn-primary(type="button") Save changes

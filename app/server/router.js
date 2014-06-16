@@ -129,7 +129,7 @@ module.exports = function(app) {
             res.redirect('/');
         }   else{
             res.render('index', {
-                title : 'Control Panel',
+                title : 'CBD',
                 countries : CT,
                 udata : req.session.user
             });
@@ -137,6 +137,7 @@ module.exports = function(app) {
     });
 
     app.post('/index', function(req, res){
+        console.log("Pasamos x el servidor to fashion");
         if (req.param('user') != undefined) {
             DBM.updateAccount({
                 user 		: req.param('user'),
@@ -158,9 +159,24 @@ module.exports = function(app) {
                 }
             });
         }	else if (req.param('logout') == 'true'){
+            console.log("Logout: servidor");
             res.clearCookie('user');
             res.clearCookie('pass');
             req.session.destroy(function(e){ res.send('ok', 200); });
+        }
+    });
+
+    app.get('/trips/:id', function(req, res) {
+        if (req.session.user == null){
+            // if user is not logged-in redirect back to login page //
+            res.redirect('/');
+        }   else{
+            res.render('trip', {
+                title : 'CBD',
+                countries : CT,
+                udata : req.session.user,
+                id: req.params.id
+            });
         }
     });
 	
@@ -269,7 +285,6 @@ module.exports = function(app) {
 
     app.get('/api/trips', function(req, res) {
         DBM.findAllTrips(function(err, excursiones){
-            console.log("Paso x aki");
             if(err) {
                 res.send(err);
             }
@@ -283,7 +298,13 @@ module.exports = function(app) {
                res.send(err);
            }
            res.json(excursion);
+           console.log("JSON: ");
+           console.log(excursion);
        });
+    });
+
+    app.get('/bd', function(req, res) {
+        res.render('trip');
     });
 	
 	app.get('*', function(req, res) { res.render('404', { title: 'Page Not Found'}); });

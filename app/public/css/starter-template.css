@@ -1704,3 +1704,8 @@ footer {
     width: 85.0%;
 }
 
+a:hover.hover-red{
+    color: #faa732;
+    text-decoration: none;
+    font-style: italic;
+}

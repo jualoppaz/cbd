@@ -16,18 +16,23 @@ block content
                     button#btn-logout.btn.btn-primary(data-toggle="modal", data-target="#myModal", style="margin-top:7px")
                         i.icon-lock.icon-white
                         |  Cerrar sesión
-    div(ng-app="angularIndex")
-        div(ng-controller="indexController")
-            div.panel.panel-body.terms-and-conditions.col-md-8.col-md-offset-2
-                h1(style="text-align: center").red Excursiones disponibles
-            div.panel.panel-body.terms-and-conditions.col-md-8.col-md-offset-2(ng-repeat="trip in trips", style="text-align:center")
+    div(ng-app="angularTrip")
+        div(ng-controller="tripController")
+            div.panel.panel-body.col-md-8.col-md-offset-2
+                h1(style="text-align: center", ng-bind-template="{{trip.title}} ({{trip.moment | date:'dd/MM/yyyy'}})").red
+            div.panel.panel-body.col-md-8.col-md-offset-2(style="text-align:center")
                 div(style="text-align:left")
-                    h1(style="margin-bottom:30px").green
-                        a(ng-href="/trips/{{trip._id}}", ng-bind-template="{{$index + 1}}. {{trip.title}} ({{trip.moment | date:'dd/MM/yyyy'}})").green.hover-red
+                    h1(style="margin-bottom:30px", ng-bind-template="").green
                 div(style="float:left; margin-right: 20px")
                     img(ng-src="/img/{{trip.image}}", height="200", width="300", style="margin-left: 10px; margin-bottom: 10px")
                 div(style="margin-left: 10px;")
                     h3(style="text-align:justify; margin-top: 0px", ng-bind-template="{{trip.description}}").blue
+
+                div
+                    a(href="../icon/database")
+                        i.fa.fa-database.fa-5x
+                            fa-database
+
         include modals/alert
         include modals/confirm
 
@@ -36,8 +41,8 @@ block scripts
     script(src='/vendor/jquery.form.js')
     script(src='/vendor/bootstrap-modal.js')
     script(src='/vendor/bootstrap-transition.js')
-    script(src='/js/views/index.js')
-    script(src='/js/controllers/indexController.js')
+    script(src='/js/views/trip.js')
+    script(src='/js/controllers/tripController.js')
     script(src='/js/form-validators/accountValidator.js')
     script(src='/js/angular.js')
-    script(src='/js/angular/angularIndex.js')
+    script(src='/js/angular/angularTrip.js')

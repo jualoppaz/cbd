@@ -1,5 +1,5 @@
 
-function IndexController()
+function TripController()
 {
 
 // bind event listeners to button clicks //
@@ -15,7 +15,7 @@ function IndexController()
 	{
 		var that = this;
 		$.ajax({
-			url: "/index",
+			url: "/trip",
 			type: "POST",
 			data: {logout : true},
 			success: function(data){
