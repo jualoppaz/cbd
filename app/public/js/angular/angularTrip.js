@@ -44,9 +44,9 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
 
             var fechaExcursionFiltrada = anyoExcursion + "/" + mesExcursion + "/" + diaExcursion;
 
-            alert("Resultado: " + (fechaExcursionFiltrada < fechaActualFiltrada));
-            alert("Fecha actual: " + fechaActualFiltrada);
-            alert("Fecha excursion: " + fechaExcursionFiltrada);
+            //alert("Resultado: " + (fechaExcursionFiltrada < fechaActualFiltrada));
+            //alert("Fecha actual: " + fechaActualFiltrada);
+            //alert("Fecha excursion: " + fechaExcursionFiltrada);
 
             //opcion 1
 
