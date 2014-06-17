@@ -1700,6 +1700,10 @@ footer {
     color: #004099;
 }
 
+.orange{
+    color: #faa732;
+}
+
 .login-form-submit{
     width: 85.0%;
 }
@@ -1708,4 +1712,28 @@ a:hover.hover-red{
     color: #faa732;
     text-decoration: none;
     font-style: italic;
+}
+
+.separador-horizontal{
+    border-bottom: 1px solid #B0B0B0;
+}
+
+.izquierda{
+    text-align: left;
+}
+
+body{
+    font-family: Abel;
+}
+
+#btn-logout{
+    width: 110px;
+}
+
+.nuevo-comentario{
+    background-color: #eeeeee;
+}
+
+.nuevo-comentario:focus{
+    background-color: #ffffff;
 }

@@ -11,27 +11,52 @@ block content
                         span.icon-bar
                         span.icon-bar
                         span.icon-bar
-                    a(href="#").navbar-brand CBD
+                    a(href="/index").navbar-brand Inicio
                 nav.collapse.navbar-collapse.bs-navbar-collapse(role="navigation")
                     button#btn-logout.btn.btn-primary(data-toggle="modal", data-target="#myModal", style="margin-top:7px")
                         i.icon-lock.icon-white
                         |  Cerrar sesión
     div(ng-app="angularTrip")
         div(ng-controller="tripController")
-            div.panel.panel-body.col-md-8.col-md-offset-2
+            div.panel.panel-body.col-md-10.col-md-offset-1
                 h1(style="text-align: center", ng-bind-template="{{trip.title}} ({{trip.moment | date:'dd/MM/yyyy'}})").red
-            div.panel.panel-body.col-md-8.col-md-offset-2(style="text-align:center")
-                div(style="text-align:left")
-                    h1(style="margin-bottom:30px", ng-bind-template="").green
-                div(style="float:left; margin-right: 20px")
-                    img(ng-src="/img/{{trip.image}}", height="200", width="300", style="margin-left: 10px; margin-bottom: 10px")
-                div(style="margin-left: 10px;")
-                    h3(style="text-align:justify; margin-top: 0px", ng-bind-template="{{trip.description}}").blue
+            div.panel.panel-body.col-md-10.col-md-offset-1(style="text-align:center")
+                div(style="float:left; margin-top: 25px").col-md-5
+                    img(ng-src="/img/{{trip.image}}", height="300", width="400", style="margin-left: 10px; margin-bottom: 10px")
+                div.col-md-7
+                    h1(style="text-align: left;").separador-horizontal.green Detalles
+                    div.row
+                        div.col-md-6.izquierda.blue
+                            h3 Lugar
+                        div.col-md-6.izquierda.blue
+                            h3 Día
+                    div.row
+                        div.col-md-6.izquierda
+                            h3(ng-bind-template="{{trip.place}}")
+                        div.col-md-6.izquierda
+                            h3(ng-bind-template="{{trip.moment | date:'dd/MM/yyyy'}}")
+                    div.row
+                        div.col-md-6.izquierda.blue
+                            h3 Precio
+                    div.row
+                        div.col-md-6.izquierda
+                            div(ng-show="precioMayorQueCero()")
+                                h3(ng-bind-template="{{trip.price}} euros")
+                            div(ng-show="!precioMayorQueCero()")
+                                h3(ng-bind-template="{{free}}")
+            div.panel.panel-body.col-md-10.col-md-offset-1
+                h3(style="text-align:justify; margin-top: 10px; margin-left:10px", ng-bind-template="{{trip.description}}").blue
+            div.panel.panel-body.col-md-6.col-md-offset-3
+                h1.red Comentarios
+                form
+                    textarea(placeholder="Escribe un comentario").form-control.nuevo-comentario
 
-                div
-                    a(href="../icon/database")
-                        i.fa.fa-database.fa-5x
-                            fa-database
+
+
+            div
+                a(href="../icon/database")
+                    i.fa.fa-database.fa-5x
+                        fa-database
 
         include modals/alert
         include modals/confirm
