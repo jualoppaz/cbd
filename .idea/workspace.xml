@@ -22,62 +22,7 @@
     <favorites_list name="WS_CBD" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="trip.jade" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/server/views/trip.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="56" selection-start="512" selection-end="512" vertical-scroll-proportion="0.37777779" vertical-offset="0" max-vertical-offset="1326">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angularTrip.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/public/js/angular/angularTrip.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/server/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="295" column="10" selection-start="8117" selection-end="8117" vertical-scroll-proportion="0.0" vertical-offset="4779" max-vertical-offset="5389">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="starter-template.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/public/css/starter-template.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1738" column="1" selection-start="28418" selection-end="28418" vertical-scroll-proportion="0.0" vertical-offset="29034" max-vertical-offset="29648">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/server/views/index.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="42" selection-start="498" selection-end="498" vertical-scroll-proportion="-6.6" vertical-offset="56" max-vertical-offset="816">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/public/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4026" column="29" selection-start="79050" selection-end="79063" vertical-scroll-proportion="-8.96" vertical-offset="68218" max-vertical-offset="98447">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -106,7 +51,6 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/app/server/modules/account-manager.js" />
         <option value="$PROJECT_DIR$/app/public/js/angular/angularTravel.js" />
-        <option value="$PROJECT_DIR$/app/server/views/login.jade" />
         <option value="$PROJECT_DIR$/app/public/js/angular.js" />
         <option value="$PROJECT_DIR$/app/server/views/modals/alert.jade" />
         <option value="$PROJECT_DIR$/app/public/js/views/reset.js" />
@@ -116,14 +60,15 @@
         <option value="$PROJECT_DIR$/app/server/modules/data-base-manager.js" />
         <option value="$PROJECT_DIR$/app/public/js/angular/angularIndex.js" />
         <option value="$PROJECT_DIR$/app/public/js/views/trip.js" />
-        <option value="$PROJECT_DIR$/app/public/js/controllers/tripController.js" />
         <option value="$PROJECT_DIR$/app/server/router.js" />
-        <option value="$PROJECT_DIR$/app/server/views/layout.jade" />
-        <option value="$PROJECT_DIR$/app/public/css/style.css" />
-        <option value="$PROJECT_DIR$/app/public/js/angular/angularTrip.js" />
         <option value="$PROJECT_DIR$/app/server/views/index.jade" />
+        <option value="$PROJECT_DIR$/app/public/css/style.css" />
         <option value="$PROJECT_DIR$/app/public/css/starter-template.css" />
+        <option value="$PROJECT_DIR$/app/server/views/login.jade" />
+        <option value="$PROJECT_DIR$/app/public/js/controllers/tripController.js" />
+        <option value="$PROJECT_DIR$/app/server/views/layout.jade" />
         <option value="$PROJECT_DIR$/app/server/views/trip.jade" />
+        <option value="$PROJECT_DIR$/app/public/js/angular/angularTrip.js" />
       </list>
     </option>
   </component>
@@ -404,26 +349,8 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -442,10 +369,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -463,11 +386,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WS\WS_CBD\app\public\img" />
+      <recent name="D:\WS\WS_CBD\app\public\js\angular" />
       <recent name="D:\WS\WS_CBD\app\public\css" />
       <recent name="D:\WS\WS_CBD\app\public\js\views" />
       <recent name="D:\WS\WS_CBD\app\public\js\controllers" />
-      <recent name="D:\WS\WS_CBD\app\public\js\angular" />
-      <recent name="D:\WS\WS_CBD\app\server\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\WS\WS_CBD\app\public\fonts" />
@@ -544,14 +467,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3207547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -689,11 +612,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.4870912" vertical-offset="864" max-vertical-offset="1445" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/views/login.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="64" selection-start="575" selection-end="592" vertical-scroll-proportion="0.23725834" vertical-offset="86" max-vertical-offset="680" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/public/vendor/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="581" />
@@ -756,23 +674,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/js/controllers/tripController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="25" selection-start="374" selection-end="374" vertical-scroll-proportion="0.4737705" vertical-offset="0" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/js/views/trip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/angular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="777" column="10" selection-start="19293" selection-end="19293" vertical-scroll-proportion="0.33333334" vertical-offset="13078" max-vertical-offset="359941" />
+        <state line="777" column="10" selection-start="19293" selection-end="19293" vertical-scroll-proportion="0.33333334" vertical-offset="13078" max-vertical-offset="359941">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/server/views/account.jade">
@@ -815,26 +721,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="8" selection-start="2219" selection-end="2219" vertical-scroll-proportion="0.0" vertical-offset="1480" max-vertical-offset="2431">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/controllers/indexController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="8" selection-start="124" selection-end="124" vertical-scroll-proportion="-0.05901639" vertical-offset="172" max-vertical-offset="782">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="407" selection-end="407" vertical-scroll-proportion="0.2905983" vertical-offset="0" max-vertical-offset="585">
-          <folding>
-            <marker date="1402990950944" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -852,23 +742,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/js/angular/angularTrip.js">
+    <entry file="file://$PROJECT_DIR$/app/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="714">
+        <state line="136" column="10" selection-start="2863" selection-end="2863" vertical-scroll-proportion="0.7770492" vertical-offset="1838" max-vertical-offset="2465">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/css/starter-template.css">
+    <entry file="file://$PROJECT_DIR$/app/server/views/login.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1738" column="1" selection-start="28418" selection-end="28418" vertical-scroll-proportion="0.0" vertical-offset="29034" max-vertical-offset="29648">
+        <state line="22" column="56" selection-start="1010" selection-end="1010" vertical-scroll-proportion="-14.96" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/js/views/trip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="21" selection-start="50" selection-end="50" vertical-scroll-proportion="0.083606556" vertical-offset="0" max-vertical-offset="610">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/server/views/trip.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="56" selection-start="512" selection-end="512" vertical-scroll-proportion="0.37777779" vertical-offset="0" max-vertical-offset="1326">
+        <state line="49" column="61" selection-start="2812" selection-end="2812" vertical-scroll-proportion="-7.12" vertical-offset="477" max-vertical-offset="1309">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/js/controllers/tripController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="5" selection-start="1095" selection-end="1095" vertical-scroll-proportion="1.0590163" vertical-offset="0" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/js/angular/angularTrip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.47692308" vertical-offset="605" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="60" selection-start="406" selection-end="406" vertical-scroll-proportion="0.26153848" vertical-offset="0" max-vertical-offset="585">
+          <folding>
+            <marker date="1403003515064" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/css/starter-template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="742" column="20" selection-start="11591" selection-end="11591" vertical-scroll-proportion="0.7185315" vertical-offset="12203" max-vertical-offset="29648">
           <folding />
         </state>
       </provider>

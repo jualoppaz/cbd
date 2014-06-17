@@ -5,22 +5,22 @@ block content
     div.login-form
         div.col-md-4.col-md-offset-4(style="margin-top:20px")
             form( method="post")#login-form.panel.panel-body
-                h1 Hello!
-                p.subheading Please Login To Your Account
+                h1 Bienvenido
+                p.subheading Para acceder a la aplicación debes loguearte
                 div.form-group
                     input(type="text", name="user", id='user-tf').span4.required.form-control
                 div.form-group
                     input(type="password", name="pass", id='pass-tf').span4.required.form-control
                 button(type="submit")#btn-login.btn.btn-primary.login-form-submit
                     i.icon-lock.icon-white
-                    | Sign in
-                label#remember-me.checkbox Remember Me
+                    | Entrar
+                label#remember-me.checkbox Recuérdame
                     input(type="checkbox", checked='checked')
                 div.clear-fix
                 hr
                 div.btm-links
-                    a(href='#')#forgot-password Forgot Your Password?
-                    a(href='/signup')#create-account Create An Account
+                    a(href='#')#forgot-password ¿Olvidaste tu contraseña?
+                    a(href='/signup', style="float:right")#create-account Crea una cuenta
     include modals/alert
     include modals/lost-password
 

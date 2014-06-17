@@ -1,6 +1,6 @@
 var angularTrip = angular.module('angularTrip', []);
 
-function tripController($scope, $http) {
+angularTrip.controller('tripController', function($scope, $filter, $http) {
     $scope.trip = {};
     $scope.free = "¡Gratis!";
 
@@ -18,20 +18,68 @@ function tripController($scope, $http) {
         });
 
     $scope.precioMayorQueCero = function(){
+        //alert("Funcion del precio");
         return $scope.trip.price > 0;
     };
 
-    $scope.texto = function(){
-        if ($scope.trip.price > 0){
-            alert("Precio: " + $scope.trip.price);
-            return $scope.trip.price;
-        }else{
-            alert("Gratis");
-            return $scope.free;
+    $scope.excursionRealizada = function(){
+        var fechaActual = new Date();
+
+        var diaActual = fechaActual.getDate();
+        var mesActual = String(fechaActual.getMonth() + 1);
+
+        if (mesActual<10){
+            mesActual = String(0 + mesActual);
         }
-    }
+        var anyoActual = fechaActual.getFullYear();
 
-    $scope.excursionYaPasada = function(fechaActual){
+        var fechaExcursion = $scope.trip.moment;
 
-    }
-}
+        if(typeof fechaExcursion != 'undefined'){
+            var diaExcursion = $filter('date') (fechaExcursion, 'dd');
+            var mesExcursion = $filter('date') (fechaExcursion, 'MM');
+            var anyoExcursion = $filter('date') (fechaExcursion, 'yyyy');
+
+            var fechaActualFiltrada = anyoActual + "/" + mesActual + "/" +diaActual;
+
+            var fechaExcursionFiltrada = anyoExcursion + "/" + mesExcursion + "/" + diaExcursion;
+
+            alert("Resultado: " + (fechaExcursionFiltrada < fechaActualFiltrada));
+            alert("Fecha actual: " + fechaActualFiltrada);
+            alert("Fecha excursion: " + fechaExcursionFiltrada);
+
+            //opcion 1
+
+            return fechaExcursionFiltrada < fechaActualFiltrada;
+
+            // opcion 2
+
+
+        }
+    };
+});
+/*
+angularTrip.controller('commentController', function($scope, $filter){
+    $scope.excursionRealizada = function(){
+        alert("Scope de la excursion");
+        var fechaActual = new Date();
+
+        var diaActual = fechaActual.getDate();
+        var mesActual = fechaActual.getMonth() + 1;
+        var anyoActual = fechaActual.getFullYear();
+
+        var fechaExcursion = $('#moment').val();
+
+        if(typeof fechaExcursion != 'undefined'){
+            var diaExcursion = $filter('date') (fechaExcursion, 'dd');
+            var mesExcursion = $filter('date') (fechaExcursion, 'MM');
+            var anyoExcursion = $filter('date') (fechaExcursion, 'yyyy');
+
+            alert("Resultado: " + fechaExcursion < fechaActual);
+            alert("Fecha actual: " + fechaActual);
+            alert("Fecha excursion: " + fechaExcursion);
+            return fechaExcursion < fechaActual;
+        }
+    };
+});*/
+

@@ -37,4 +37,5 @@ function TripController()
         $('#myModal').modal('show');*/
 		setTimeout(function(){window.location.href = '/';}, 5000);
 	}
+
 }

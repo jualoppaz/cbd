@@ -711,14 +711,14 @@ header .container {
 
 .login-welcome-title {
     font-size: 46px;
-    text-align: center;
+    text-align: left;
     color: #474747;
 }
 
 .login-welcome-text {
     font-size: 21px;
     font-weight: 200;
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
     line-height: 1.4;
 }
@@ -740,7 +740,7 @@ header .container {
 
 .login-form p {
     color: #CC3E27;
-    text-align: center;
+    text-align: left;
     font-size: medium;
 }
 
