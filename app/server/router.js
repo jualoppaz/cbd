@@ -3,9 +3,8 @@ var CT            = require('./modules/country-list');
 var DBM           = require('./modules/data-base-manager');
 var EM            = require('./modules/email-dispatcher');
 var mongoose      = require('mongoose'),
-    Schema        = mongoose.Schema/*,
-    relationships = require('mongoose-relationships')*/;
-require('mongo-relation');
+    Schema        = mongoose.Schema,
+    relationships = require('mongoose-relationships');
 
 var ObjectID = require('mongodb').ObjectID;
 
@@ -18,8 +17,7 @@ var AccountSchema = new Schema({
 
 var CommentSchema = new Schema({
     text: String,
-    //user: { type: ObjectId, ref: 'UserSchema' }
-    user: mongoose.Schema.ObjectId
+    user: { type: ObjectId, ref: 'User' }
 })
 
 var TripSchema = new Schema({
@@ -27,11 +25,27 @@ var TripSchema = new Schema({
     place:  String,
     price: String,
     //comments: [Comment],
-    comments: [mongoose.Schema.ObjectId]
+    comments: [{ type: ObjectId, ref: 'Comment'}]
 });
 
-AccountSchema.habtm('Trip');
-TripSchema.habtm('User');
+
+CommentSchema.plugin(relationships, {
+    belongsTo : "User"
+    , through   : "user"
+});
+
+TripSchema.plugin(relationships, {
+    hasMany   : "User"
+    , through   : "users"
+});
+
+AccountSchema.plugin(relationships, {
+    hasMany   : "Trip"
+    , through   : "trips"
+});
+
+//AccountSchema.habtm('Trip');
+//TripSchema.habtm('User');
 
 var Account    = mongoose.model('Account', AccountSchema);
 var Trip  = mongoose.model('Trip', TripSchema);
