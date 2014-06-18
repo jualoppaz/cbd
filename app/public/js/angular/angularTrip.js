@@ -3,6 +3,7 @@ var angularTrip = angular.module('angularTrip', []);
 angularTrip.controller('tripController', function($scope, $filter, $http) {
     $scope.trip = {};
     $scope.free = "";
+    $scope.username = "";
 
     var url = window.location.href.split("/");
     var tripId = url[url.length - 1];
@@ -16,6 +17,14 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
         })
         .error(function(data) {
             console.log('Error: ' + data);
+        });
+
+    $http.get('/api/user')
+        .success(function(data) {
+            $scope.username = data;
+        })
+        .error(function(data){
+
         });
 
     $scope.precioMayorQueCero = function(){

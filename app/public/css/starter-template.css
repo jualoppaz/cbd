@@ -1732,6 +1732,8 @@ body{
 
 #btn-logout{
     width: 110px;
+    margin-right: 10px;
+    position: relative;
 }
 
 .nuevo-comentario{

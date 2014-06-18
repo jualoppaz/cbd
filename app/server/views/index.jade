@@ -2,22 +2,27 @@
 extends layout
 
 block content
-    header.navbar.navbar-fixed-top.navbar-inverse
-        div.navbar-inner
-            div.container-fluid
-                div.navbar-header
-                    button.navbar-toggle(type="button", data-toggle="collapse", data-target=".bs-navbar-collapse")
-                        span.sr-only Toggle navigation
-                        span.icon-bar
-                        span.icon-bar
-                        span.icon-bar
-                    a(href="/index").navbar-brand Inicio
-                nav.collapse.navbar-collapse.bs-navbar-collapse(role="navigation")
-                    button#btn-logout.btn.btn-primary(data-toggle="modal", data-target="#myModal", style="margin-top:7px")
-                        i.icon-lock.icon-white
-                        |  Cerrar sesión
     div(ng-app="angularIndex")
         div(ng-controller="indexController")
+            header.navbar.navbar-fixed-top.navbar-inverse
+                div.navbar-inner
+                    div.container-fluid
+                        div.navbar-header
+                            button.navbar-toggle(type="button", data-toggle="collapse", data-target=".bs-navbar-collapse")
+                                span.sr-only Toggle navigation
+                                span.icon-bar
+                                span.icon-bar
+                                span.icon-bar
+                            a(href="/index").navbar-brand Inicio
+                        nav.collapse.navbar-collapse.bs-navbar-collapse(role="navigation")
+                            ul.nav.navbar-nav.navbar-right
+                                li
+                                    a(ng-bind-template="¡Hola, {{username}}!")
+                                li
+                                    button#btn-logout.btn.btn-primary(data-toggle="modal", data-target="#myModal", style="margin-top:7px")
+                                        i.icon-lock.icon-white
+                                        |  Cerrar sesión
+
             div.panel.panel-body.terms-and-conditions.col-md-8.col-md-offset-2
                 h1(style="text-align: center").red Excursiones disponibles
             div.panel.panel-body.terms-and-conditions.col-md-8.col-md-offset-2(ng-repeat="trip in trips", style="text-align:center")

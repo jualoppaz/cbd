@@ -169,8 +169,7 @@ module.exports = function(app) {
             res.render('trip', {
                 title : 'CBD',
                 countries : CT,
-                udata : req.session.user,
-                id: req.params.id
+                udata : req.session.user
             });
         }
     });
@@ -282,19 +281,20 @@ module.exports = function(app) {
         DBM.findAllTrips(function(err, excursiones){
             if(err) {
                 res.send(err);
+            }else{
+                res.json(excursiones);
             }
-            res.json(excursiones);
         });
     });
 
     app.get('/api/trips/:id', function(req, res) {
         DBM.findTripById(req.params.id, function(err, excursion){
-           if(err){
-               res.send(err);
-           }
-           res.json(excursion);
-           console.log("JSON: ");
-           console.log(excursion);
+            if(err){
+                res.send(err);
+            }
+            res.json(excursion);
+            console.log("JSON: ");
+            console.log(excursion);
        });
     });
 
@@ -319,6 +319,10 @@ module.exports = function(app) {
                 res.json(trip);
             }
        });
+    });
+
+    app.get('/api/user', function(req, res) {
+       res.send(req.session.user.name);
     });
 	
 	app.get('*', function(req, res) { res.render('404', { title: 'Page Not Found'}); });

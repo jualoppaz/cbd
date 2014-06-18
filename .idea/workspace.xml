@@ -23,55 +23,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="alert.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/server/views/modals/alert.jade">
+      <file leaf-file-name="starter-template.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/public/css/starter-template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="83" selection-start="2200" selection-end="2200" vertical-scroll-proportion="-11.16" vertical-offset="554" max-vertical-offset="935">
+            <state line="1735" column="23" selection-start="28354" selection-end="28354" vertical-scroll-proportion="0.0" vertical-offset="29313" max-vertical-offset="30226">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accountValidator.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/public/js/form-validators/accountValidator.js">
+      <file leaf-file-name="trip.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/server/views/trip.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="65" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.0" vertical-offset="1171" max-vertical-offset="1564">
+            <state line="35" column="33" selection-start="1918" selection-end="1918" vertical-scroll-proportion="-2.48" vertical-offset="533" max-vertical-offset="1428">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jade" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/server/views/index.jade">
+      <file leaf-file-name="angularTrip.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/public/js/angular/angularTrip.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="42" selection-start="498" selection-end="498" vertical-scroll-proportion="0.44836956" vertical-offset="56" max-vertical-offset="816">
+            <state line="27" column="11" selection-start="788" selection-end="788" vertical-scroll-proportion="0.752459" vertical-offset="0" max-vertical-offset="1717">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/public/js/views/login.js">
+      <file leaf-file-name="style.styl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/public/css/style.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="70" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="969">
+            <state line="95" column="20" selection-start="2010" selection-end="2010" vertical-scroll-proportion="-32.56" vertical-offset="801" max-vertical-offset="2176">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data-base-manager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/server/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="276" column="25" selection-start="6460" selection-end="6460" vertical-scroll-proportion="0.0" vertical-offset="4201" max-vertical-offset="4913">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form-errors.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/server/views/modals/form-errors.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="34" selection-start="35" selection-end="35" vertical-scroll-proportion="-0.68" vertical-offset="0" max-vertical-offset="255">
+            <state line="324" column="7" selection-start="8926" selection-end="8926" vertical-scroll-proportion="0.0" vertical-offset="5255" max-vertical-offset="5695">
               <folding />
             </state>
           </provider>
@@ -110,26 +101,26 @@
         <option value="$PROJECT_DIR$/app/public/js/views/reset.js" />
         <option value="$PROJECT_DIR$/app/public/js/controllers/indexController.js" />
         <option value="$PROJECT_DIR$/app/public/js/controllers/homeController.js" />
-        <option value="$PROJECT_DIR$/app/public/js/angular/angularIndex.js" />
         <option value="$PROJECT_DIR$/app/public/js/views/trip.js" />
-        <option value="$PROJECT_DIR$/app/server/views/index.jade" />
         <option value="$PROJECT_DIR$/app/public/js/controllers/tripController.js" />
         <option value="$PROJECT_DIR$/app/server/views/layout.jade" />
-        <option value="$PROJECT_DIR$/app/public/js/angular/angularTrip.js" />
-        <option value="$PROJECT_DIR$/app/public/css/starter-template.css" />
-        <option value="$PROJECT_DIR$/app/server/views/trip.jade" />
-        <option value="$PROJECT_DIR$/app/server/router.js" />
         <option value="$PROJECT_DIR$/app/server/modules/data-base-manager.js" />
         <option value="$PROJECT_DIR$/app/server/views/login.jade" />
         <option value="$PROJECT_DIR$/app/server/views/account.jade" />
-        <option value="$PROJECT_DIR$/app/public/css/style.styl" />
         <option value="$PROJECT_DIR$/app/public/vendor/bootstrap-modal.js" />
-        <option value="$PROJECT_DIR$/app/public/css/style.css" />
         <option value="$PROJECT_DIR$/app/server/views/modals/form-errors.jade" />
         <option value="$PROJECT_DIR$/app/public/js/views/signup.js" />
         <option value="$PROJECT_DIR$/app/server/views/modals/alert.jade" />
         <option value="$PROJECT_DIR$/app/public/js/controllers/signupController.js" />
         <option value="$PROJECT_DIR$/app/public/js/form-validators/accountValidator.js" />
+        <option value="$PROJECT_DIR$/app/public/js/angular/angularIndex.js" />
+        <option value="$PROJECT_DIR$/app/server/router.js" />
+        <option value="$PROJECT_DIR$/app/server/views/index.jade" />
+        <option value="$PROJECT_DIR$/app/public/css/style.styl" />
+        <option value="$PROJECT_DIR$/app/public/css/style.css" />
+        <option value="$PROJECT_DIR$/app/public/css/starter-template.css" />
+        <option value="$PROJECT_DIR$/app/server/views/trip.jade" />
+        <option value="$PROJECT_DIR$/app/public/js/angular/angularTrip.js" />
       </list>
     </option>
   </component>
@@ -385,6 +376,32 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WS_CBD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WS_CBD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -507,7 +524,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3207547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3207547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -653,11 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/js/angular/angularIndex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="207" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/controllers/indexController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="8" selection-start="124" selection-end="124" vertical-scroll-proportion="-0.05901639" vertical-offset="172" max-vertical-offset="782">
@@ -684,23 +696,9 @@
         <state line="9" column="60" selection-start="406" selection-end="406" vertical-scroll-proportion="0.26153848" vertical-offset="0" max-vertical-offset="585" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/js/angular/angularTrip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="172" selection-end="172" vertical-scroll-proportion="0.11147541" vertical-offset="0" max-vertical-offset="1564">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/public/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1108" column="11" selection-start="17088" selection-end="17096" vertical-scroll-proportion="-7.6" vertical-offset="18646" max-vertical-offset="98447">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/css/starter-template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1758" column="10" selection-start="28671" selection-end="28671" vertical-scroll-proportion="0.0" vertical-offset="29527" max-vertical-offset="30192">
           <folding />
         </state>
       </provider>
@@ -715,27 +713,6 @@
     <entry file="file://$PROJECT_DIR$/app/server/views/modals/confirm.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/views/trip.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="26" selection-start="3249" selection-end="3249" vertical-scroll-proportion="0.0" vertical-offset="622" max-vertical-offset="1360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/css/style.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="5" selection-start="2401" selection-end="2401" vertical-scroll-proportion="0.36645964" vertical-offset="1956" max-vertical-offset="2278">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="6" selection-start="2091" selection-end="2091" vertical-scroll-proportion="-0.5590551" vertical-offset="1743" max-vertical-offset="2448">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/server/views/login.jade">
@@ -817,13 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="325" column="2" selection-start="8969" selection-end="8969" vertical-scroll-proportion="4.7684727" vertical-offset="3589" max-vertical-offset="5627">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/server/views/modals/form-errors.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="34" selection-start="35" selection-end="35" vertical-scroll-proportion="-0.68" vertical-offset="0" max-vertical-offset="255">
@@ -847,14 +817,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/form-validators/accountValidator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="65" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.0" vertical-offset="1171" max-vertical-offset="1564">
+        <state line="80" column="65" selection-start="2608" selection-end="2608" vertical-scroll-proportion="0.48091602" vertical-offset="1171" max-vertical-offset="1564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/js/angular/angularIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="25" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="324" column="7" selection-start="8926" selection-end="8926" vertical-scroll-proportion="0.0" vertical-offset="5255" max-vertical-offset="5695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="0" selection-start="2158" selection-end="2158" vertical-scroll-proportion="-0.29881155" vertical-offset="1774" max-vertical-offset="2363">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/server/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="42" selection-start="498" selection-end="498" vertical-scroll-proportion="0.44836956" vertical-offset="56" max-vertical-offset="816">
+        <state line="23" column="56" selection-start="788" selection-end="1226" vertical-scroll-proportion="0.48263255" vertical-offset="127" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/css/starter-template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1735" column="23" selection-start="28354" selection-end="28354" vertical-scroll-proportion="0.0" vertical-offset="29313" max-vertical-offset="30226">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/css/style.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="20" selection-start="2010" selection-end="2010" vertical-scroll-proportion="-32.56" vertical-offset="801" max-vertical-offset="2176">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/views/trip.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="33" selection-start="1918" selection-end="1918" vertical-scroll-proportion="-2.48" vertical-offset="533" max-vertical-offset="1428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/js/angular/angularTrip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="11" selection-start="788" selection-end="788" vertical-scroll-proportion="0.752459" vertical-offset="0" max-vertical-offset="1717">
           <folding />
         </state>
       </provider>

@@ -92,12 +92,7 @@ body {
   width: 310px;
   margin: -200px 0 0 -150px;
 }
-#btn-logout {
-  width: 100px;
-  top: 1px;
-  right: 8px;
-  position: absolute;
-}
+
 #print {
   padding: 20px;
 }

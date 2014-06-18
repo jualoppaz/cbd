@@ -2,58 +2,62 @@
 extends layout
 
 block content
-    header.navbar.navbar-fixed-top.navbar-inverse
-        div.navbar-inner
-            div.container-fluid
-                div.navbar-header
-                    button.navbar-toggle(type="button", data-toggle="collapse", data-target=".bs-navbar-collapse")
-                        span.sr-only Toggle navigation
-                        span.icon-bar
-                        span.icon-bar
-                        span.icon-bar
-                    a(href="/index").navbar-brand Inicio
-                nav.collapse.navbar-collapse.bs-navbar-collapse(role="navigation")
-                    button#btn-logout.btn.btn-primary(data-toggle="modal", data-target="#myModal", style="margin-top:7px")
-                        i.icon-lock.icon-white
-                        |  Cerrar sesión
     div(ng-app="angularTrip")
-        div#controllers
-            div(ng-controller="tripController")
-                div.panel.panel-body.col-md-10.col-md-offset-1
-                    h1(style="text-align: center", ng-bind-template="{{trip.title}}").red
-                div.panel.panel-body.col-md-10.col-md-offset-1(style="text-align:center")
-                    div(style="float:left; margin-top: 25px").col-md-5
-                        img(ng-src="/img/{{trip.image}}", height="300", width="400", style="margin-left: 10px; margin-bottom: 10px")
-                    div.col-md-7
-                        h1(style="text-align: left;").separador-horizontal.green Detalles
-                        div.row
-                            div.col-md-6.izquierda.blue
-                                h3 Lugar
-                            div.col-md-6.izquierda.blue
-                                h3 Día
-                        div.row
-                            div.col-md-6.izquierda
-                                h3(ng-bind-template="{{trip.place}}")
-                            div.col-md-6.izquierda
-                                h3(ng-bind-template="{{trip.moment | date:'dd/MM/yyyy'}}")#moment
-                        div.row
-                            div.col-md-6.izquierda.blue
-                                h3 Precio
-                        div.row
-                            div.col-md-6.izquierda
-                                div(ng-show="precioMayorQueCero()")
-                                    h3(ng-bind-template="{{trip.price}} euros").precio
-                                div(ng-show="!precioMayorQueCero()")
-                                    h3(ng-bind-template="{{free}}").precio
-                div.panel.panel-body.col-md-10.col-md-offset-1
-                    h3(style="text-align:justify; margin-top: 10px; margin-left:10px", ng-bind-template="{{trip.description}}").blue
-                div.panel.panel-body.col-md-3-5.col-md-offset-1
-                    h1.orange Alumnos inscritos
+        div(ng-controller="tripController")
+            header.navbar.navbar-fixed-top.navbar-inverse
+                div.navbar-inner
+                    div.container-fluid
+                        div.navbar-header
+                            button.navbar-toggle(type="button", data-toggle="collapse", data-target=".bs-navbar-collapse")
+                                span.sr-only Toggle navigation
+                                span.icon-bar
+                                span.icon-bar
+                                span.icon-bar
+                            a(href="/index").navbar-brand Inicio
+                        nav.collapse.navbar-collapse.bs-navbar-collapse(role="navigation")
+                            ul.nav.navbar-nav.navbar-right
+                                li
+                                    a(ng-bind-template="¡Hola, {{username}}!")
+                                li
+                                    button#btn-logout.btn.btn-primary(data-toggle="modal", data-target="#myModal", style="margin-top:7px")
+                                        i.icon-lock.icon-white
+                                        |  Cerrar sesión
 
-                div.panel.panel-body.col-md-6.offset-comment
-                    h1.red Comentarios
-                    form(ng-show="excursionRealizada()")
-                        textarea(placeholder="Escribe un comentario").form-control.nuevo-comentario
+            div.panel.panel-body.col-md-10.col-md-offset-1
+                h1(style="text-align: center", ng-bind-template="{{trip.title}}").red
+            div.panel.panel-body.col-md-10.col-md-offset-1(style="text-align:center")
+                div(style="float:left; margin-top: 25px").col-md-5
+                    img(ng-src="/img/{{trip.image}}", height="300", width="400", style="margin-left: 10px; margin-bottom: 10px")
+                div.col-md-7
+                    h1(style="text-align: left;").separador-horizontal.green Detalles
+                    div.row
+                        div.col-md-6.izquierda.blue
+                            h3 Lugar
+                        div.col-md-6.izquierda.blue
+                            h3 Día
+                    div.row
+                        div.col-md-6.izquierda
+                            h3(ng-bind-template="{{trip.place}}")
+                        div.col-md-6.izquierda
+                            h3(ng-bind-template="{{trip.moment | date:'dd/MM/yyyy'}}")#moment
+                    div.row
+                        div.col-md-6.izquierda.blue
+                            h3 Precio
+                    div.row
+                        div.col-md-6.izquierda
+                            div(ng-show="precioMayorQueCero()")
+                                h3(ng-bind-template="{{trip.price}} euros").precio
+                            div(ng-show="!precioMayorQueCero()")
+                                h3(ng-bind-template="{{free}}").precio
+            div.panel.panel-body.col-md-10.col-md-offset-1
+                h3(style="text-align:justify; margin-top: 10px; margin-left:10px", ng-bind-template="{{trip.description}}").blue
+            div.panel.panel-body.col-md-3-5.col-md-offset-1
+                h1.orange Alumnos inscritos
+
+            div.panel.panel-body.col-md-6.offset-comment
+                h1.red Comentarios
+                form(ng-show="excursionRealizada()")
+                    textarea(placeholder="Escribe un comentario").form-control.nuevo-comentario
 
             div
                 a(href="../icon/database")
