@@ -20,6 +20,7 @@ var CommentSchema = new Schema({
     user: { type: ObjectId, ref: 'Account' }
 });
 
+/*
 var TripSchema = new Schema({
     title: String,
     place:  String,
@@ -28,7 +29,7 @@ var TripSchema = new Schema({
     comments: [{ type: ObjectId, ref: 'Comment'}]
 });
 
-var Trip  = mongoose.model('Trip', TripSchema);
+var Trip  = mongoose.model('Trip', TripSchema);*/
 
 /*
 CommentSchema.plugin(relationships, {
