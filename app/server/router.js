@@ -15,7 +15,7 @@ var AccountSchema = new Schema({
 
 var CommentSchema = new Schema({
     text: String,
-    user: { type: ObjectId, ref: 'User' }
+    user: { type: ObjectId, ref: 'Account' }
 })
 
 var TripSchema = new Schema({
@@ -28,12 +28,12 @@ var TripSchema = new Schema({
 
 
 CommentSchema.plugin(relationships, {
-    belongsTo : "User"
+    belongsTo : "Account"
     , through   : "user"
 });
 
 TripSchema.plugin(relationships, {
-    hasMany   : "User"
+    hasMany   : "Account"
     , through   : "users"
 });
 
