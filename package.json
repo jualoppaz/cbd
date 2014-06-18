@@ -10,7 +10,8 @@
     "moment": "~1.7.2",
     "mongodb": "~1.2.7",
     "mongoose": "~3.8.11",
-    "stylus": "~0.31.0"
+    "stylus": "~0.31.0",
+    "mongoose-relationship": "0.0.6"
   },
   "devDependencies": {},
   "scripts": {
@@ -30,7 +31,7 @@
     "url": "https://github.com/jualoppaz/cbd/issues"
   },
   "homepage": "https://github.com/jualoppaz/cbd",
-   "engines": {
+  "engines": {
     "node": "0.10.x"
   }
 }
