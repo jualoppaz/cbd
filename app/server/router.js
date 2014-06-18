@@ -5,8 +5,7 @@ var EM            = require('./modules/email-dispatcher');
 var mongoose      = require('mongoose'),
     Schema        = mongoose.Schema/*,
     relationships = require('mongoose-relationships')*/;
-
-//require('mongo-relation');
+require('mongo-relation');
 
 var ObjectID = require('mongodb').ObjectID;
 
