@@ -13,6 +13,8 @@ var AccountSchema = new Schema({
     email:       String
 });
 
+var Account    = mongoose.model('Account', AccountSchema);
+
 var CommentSchema = new Schema({
     text: String,
     user: { type: ObjectId, ref: 'Account' }
@@ -25,6 +27,8 @@ var TripSchema = new Schema({
     //comments: [Comment],
     comments: [{ type: ObjectId, ref: 'Comment'}]
 });
+
+var Trip  = mongoose.model('Trip', TripSchema);
 
 /*
 CommentSchema.plugin(relationships, {
@@ -45,8 +49,8 @@ AccountSchema.plugin(relationships, {
 //AccountSchema.habtm('Trip');
 //TripSchema.habtm('User');
 
-var Account    = mongoose.model('Account', AccountSchema);
-var Trip  = mongoose.model('Trip', TripSchema);
+
+
 
 
 module.exports = function(app) {
