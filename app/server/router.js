@@ -18,7 +18,7 @@ var Account    = mongoose.model('Account', AccountSchema);
 var CommentSchema = new Schema({
     text: String,
     user: { type: ObjectId, ref: 'Account' }
-})
+});
 
 var TripSchema = new Schema({
     title: String,
