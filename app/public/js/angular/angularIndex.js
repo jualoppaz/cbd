@@ -9,7 +9,6 @@ function indexController($scope, $http) {
         .success(function(data) {
             $scope.trips = data;
             console.log(data);
-            alert(data.username);
         })
         .error(function(data) {
             console.log('Error: ' + data);
