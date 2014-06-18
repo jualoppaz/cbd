@@ -2,7 +2,7 @@ var angularTrip = angular.module('angularTrip', []);
 
 angularTrip.controller('tripController', function($scope, $filter, $http) {
     $scope.trip = {};
-    $scope.free = "¡Gratis!";
+    $scope.free = "";
 
     var url = window.location.href.split("/");
     var tripId = url[url.length - 1];
@@ -12,6 +12,7 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
         .success(function(data) {
             $scope.trip = data;
             console.log(data);
+            $scope.free = "¡Gratis!";
         })
         .error(function(data) {
             console.log('Error: ' + data);

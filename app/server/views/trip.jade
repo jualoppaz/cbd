@@ -20,7 +20,7 @@ block content
         div#controllers
             div(ng-controller="tripController")
                 div.panel.panel-body.col-md-10.col-md-offset-1
-                    h1(style="text-align: center", ng-bind-template="{{trip.title}} ({{trip.moment | date:'dd/MM/yyyy'}})").red
+                    h1(style="text-align: center", ng-bind-template="{{trip.title}}").red
                 div.panel.panel-body.col-md-10.col-md-offset-1(style="text-align:center")
                     div(style="float:left; margin-top: 25px").col-md-5
                         img(ng-src="/img/{{trip.image}}", height="300", width="400", style="margin-left: 10px; margin-bottom: 10px")
@@ -47,7 +47,10 @@ block content
                                     h3(ng-bind-template="{{free}}").precio
                 div.panel.panel-body.col-md-10.col-md-offset-1
                     h3(style="text-align:justify; margin-top: 10px; margin-left:10px", ng-bind-template="{{trip.description}}").blue
-                div.panel.panel-body.col-md-6.col-md-offset-3
+                div.panel.panel-body.col-md-3-5.col-md-offset-1
+                    h1.orange Alumnos inscritos
+
+                div.panel.panel-body.col-md-6.offset-comment
                     h1.red Comentarios
                     form(ng-show="excursionRealizada()")
                         textarea(placeholder="Escribe un comentario").form-control.nuevo-comentario

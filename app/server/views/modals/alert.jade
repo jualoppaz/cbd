@@ -18,3 +18,33 @@ div.modal.fade#myModal(tabindex="-1", role="dialog", aria-labelledby="myModalLab
             div.modal-footer
                 //button.btn.btn-default(type="button", data-dismiss="modal") Close
                 //button.btn.btn-primary(type="button") Save changes
+
+div.modal.fade#signup(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+    div.modal-dialog
+        div.modal-content
+            div.modal-header
+                button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+                h4.modal-title#myModalLabel Cerrando sesión
+            div.modal-body A continuación será redirigido a la página de inicio de la aplicación.
+            div.modal-footer
+
+div.modal.fade#modal-generic(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+    div.modal-dialog
+        div.modal-content
+            div.modal-header
+                button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+                h4.modal-title#modal-titulo
+            div.modal-body
+                ul#errores
+            div.modal-footer
+
+div.modal.fade#modal-cuenta(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+    div.modal-dialog
+        div.modal-content
+            div.modal-header
+                button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+                h4.modal-title#modal-cuenta-titulo
+            div.modal-body
+                p#mensaje
+            div.modal-footer
+                button(type="button", data-dismiss="modal").btn.btn-primary#aceptar Aceptar

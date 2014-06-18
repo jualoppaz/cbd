@@ -1704,9 +1704,13 @@ footer {
     color: #faa732;
 }
 
+
+
+/*
 .login-form-submit{
     width: 85.0%;
 }
+*/
 
 a:hover.hover-red{
     color: #faa732;
@@ -1736,4 +1740,32 @@ body{
 
 .nuevo-comentario:focus{
     background-color: #ffffff;
+}
+
+.navbar-brand{
+    color: #ffffff !important;
+    font-size: 25px !important;
+}
+
+.navbar-brand:hover{
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.sin-padding-izquierdo{
+    padding-left: 0px !important;
+}
+
+.col-md-3-5{
+    width: 29.17%;
+    float:left;
+}
+
+.col-md-6-5{
+    width: 54.17%;
+    float:left;
+}
+
+.offset-comment{
+    margin-left: 4.17%;
 }

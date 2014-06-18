@@ -33,12 +33,19 @@ function AccountValidator(){
 	}
 	
 	this.showErrors = function(a)
-	{
-		$('.modal-form-errors .modal-body p').text('Please correct the following problems :');
+	{/*
+		$('.-form-errors .modal-body p').text('Please correct the following problems :');
 		var ul = $('.modal-form-errors .modal-body ul');
 			ul.empty();
 		for (var i=0; i < a.length; i++) ul.append('<li>'+a[i]+'</li>');
-		this.alert.modal('show');
+		this.alert.modal('show');*/
+
+        $('#modal-titulo').text('Por favor, corrija estos problemas');
+        var ul = $('#errores');
+        ul.empty();
+        for (var i=0; i < a.length; i++) ul.append('<li>'+a[i]+'</li>');
+        $('#modal-generic').modal('show');
+
 	}
 
 }
@@ -46,13 +53,13 @@ function AccountValidator(){
 AccountValidator.prototype.showInvalidEmail = function()
 {
 	this.controlGroups[1].addClass('error');
-	this.showErrors(['That email address is already in use.']);
+	this.showErrors(['El email introducido está en uso.']);
 }
 
 AccountValidator.prototype.showInvalidUserName = function()
 {
 	this.controlGroups[2].addClass('error');
-	this.showErrors(['That username is already in use.']);
+	this.showErrors(['El usuario introducido está en uso.']);
 }
 
 AccountValidator.prototype.validateForm = function()
@@ -60,18 +67,18 @@ AccountValidator.prototype.validateForm = function()
 	var e = [];
 	for (var i=0; i < this.controlGroups.length; i++) this.controlGroups[i].removeClass('error');
 	if (this.validateName(this.formFields[0].val()) == false) {
-		this.controlGroups[0].addClass('error'); e.push('Please Enter Your Name');
-	}
+		this.controlGroups[0].addClass('error'); e.push('Por favor, introduzca su nombre.');
+    }
 	if (this.validateEmail(this.formFields[1].val()) == false) {
-		this.controlGroups[1].addClass('error'); e.push('Please Enter A Valid Email');
+		this.controlGroups[1].addClass('error'); e.push('Por favor, introduzca su email.');
 	}
 	if (this.validateName(this.formFields[2].val()) == false) {
 		this.controlGroups[2].addClass('error');
-		e.push('Please Choose A Username');
+		e.push('Por favor, elija un nombre de usuario.');
 	}
 	if (this.validatePassword(this.formFields[3].val()) == false) {
 		this.controlGroups[3].addClass('error');
-		e.push('Password Should Be At Least 6 Characters');
+		e.push('La contraseña debe tener, al menos, 6 caracteres.');
 	}
 	if (e.length) this.showErrors(e);
 	return e.length === 0;

@@ -1,46 +1,42 @@
 
-var CT           = require('./modules/country-list');
-var DBM          = require('./modules/data-base-manager');
-var EM           = require('./modules/email-dispatcher');
-var mongoose     = require('mongoose'),
-    Schema       = mongoose.Schema/*,
-    relationship = require('mongoose-relationship')*/;
+var CT            = require('./modules/country-list');
+var DBM           = require('./modules/data-base-manager');
+var EM            = require('./modules/email-dispatcher');
+var mongoose      = require('mongoose'),
+    Schema        = mongoose.Schema/*,
+    relationships = require('mongoose-relationships')*/;
 
-/*
+require('mongo-relation');
 
-var UsuarioSchema = new Schema({
-    nombre:     String,
-    nick:       String,
-    contrasena: String,
-    email:      String,
-    pais:       String
+var ObjectID = require('mongodb').ObjectID;
+
+var AccountSchema = new Schema({
+    name:        String,
+    username:    String,
+    password:    String,
+    email:       String
 });
 
-var Account    = mongoose.model("Account", UsuarioSchema);
+var CommentSchema = new Schema({
+    text: String,
+    //user: { type: ObjectId, ref: 'UserSchema' }
+    user: mongoose.Schema.ObjectId
+})
 
-var ComentarioSchema = new Schema({
-    texto: String,
-    usuario: {type:Schema.ObjectId, ref:"Account"}
+var TripSchema = new Schema({
+    title: String,
+    place:  String,
+    price: String,
+    //comments: [Comment],
+    comments: [mongoose.Schema.ObjectId]
 });
 
-var Comentario = mongoose.model("Comentario", ComentarioSchema);
-*/
+AccountSchema.habtm('Trip');
+TripSchema.habtm('User');
 
-/*
-var ExcursionSchema = new Schema({
-    titulo: String,
-    lugar:  String,
-    precio: String
-    //comentarios : [Comentario]
-});
+var Account    = mongoose.model('Account', AccountSchema);
+var Trip  = mongoose.model('Trip', TripSchema);
 
-var Excursion  = mongoose.model("excursiones", ExcursionSchema);*/
-
-var Trip = mongoose.model('Trip', {
-    titulo: String,
-    lugar:  String,
-    precio: String
-});
 
 module.exports = function(app) {
 
@@ -137,7 +133,6 @@ module.exports = function(app) {
     });
 
     app.post('/index', function(req, res){
-        console.log("Pasamos x el servidor to fashion");
         if (req.param('user') != undefined) {
             DBM.updateAccount({
                 user 		: req.param('user'),
@@ -303,8 +298,27 @@ module.exports = function(app) {
        });
     });
 
-    app.get('/bd', function(req, res) {
-        res.render('trip');
+    /*
+    app.post('/api/trips/:id', function(req, res) {
+        DBM.findTripById(req.params.id, function(err, excursion){
+            if(err){
+                res.send(err);
+            }
+            res.json(excursion);
+            console.log("JSON: ");
+            console.log(excursion);
+        });
+    });
+    */
+
+    app.post('/api/trips/:id/users', function(req, res) {
+       DBM.addNewUserToTrip(req.params.id, req.session.user, function(err, trip){
+            if(err){
+                res.send(err);
+            }else{
+                res.json(trip);
+            }
+       });
     });
 	
 	app.get('*', function(req, res) { res.render('404', { title: 'Page Not Found'}); });

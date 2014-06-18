@@ -260,4 +260,24 @@ exports.findTripById = function(id, callback)
         });
 };
 
+exports.findUsersByTripId = function(id, callback)
+{
+    trips.find({ $query: {users:1}}).toArray(
+        function(e, res){
+            if(e) callback(e)
+            else callback(null, res)
+        });
+};
+
+exports.addNewUserToTrip = function(tripId, user, callback)
+{
+    var users = findUsersByTripId(tripId);
+    users.append(user);
+    trips.update({_id: tripId}, {users:users}).toArray(
+        function(e, res){
+            if(e) callback(e)
+            else callback(null, res)
+        });
+};
+
 

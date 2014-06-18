@@ -4,39 +4,46 @@
 // store the userId on the client side in a hidden input field //
 input(type='hidden', value= user._id)#userId
 
-#account-form-container
-	form( method="post")#account-form.form-horizontal.well.span6
-		h1
-		p#sub1.subheading Please tell us a little about yourself.
-		hr
-		fieldset
-			#name-cg.control-group
-				label.control-label(for='name-tf') Name
-				.controls
-					input#name-tf.input-xlarge(type='text', name='name', value= user.name)
-			#email-cg.control-group
-				label.control-label(for='email-tf') Email
-				.controls
-					input#email-tf.input-xlarge(type='text', name='email', value= user.email)
-			#clist-cg.control-group
-				label.control-label(for='country-list') Location
-				.controls
-					select#country-list(name='country')
-						each item in countries
-							option(selected=item.name == user.country)= item.name
-			hr
-			p#sub2.subheading
-			#user-cg.control-group
-				label.control-label(for='user-tf') Username
-				.controls
-					input#user-tf.input-xlarge.disabled(type='text', name='user', value= user.user)
-			#pass-cg.control-group
-				label.control-label(for='pass-tf') Password
-				.controls
-					input#pass-tf.input-xlarge(type='password', name='pass', value='')
-			.form-actions
-				button(type='button')#account-form-btn1.btn
-				button(type='submit')#account-form-btn2.btn
+.login-form
+    //#account-form-container.col-md-4.col-md-offset-4(style="margin-top:20px")
+    .col-md-4.col-md-offset-4(style="margin-top:20px")
+        form(method="post", role="form")#account-form.panel.panel-body.form-horizontal
+            h1
+            p#sub1.subheading Please tell us a little about yourself.
+            hr
+            div
+                #name-cg.control-group
+                div.form-group
+                    label.control-label.col-md-2(for='name-tf') Name
+                    div.col-md-6
+                        input#name-tf(type='text', name='name', value= user.name).required.form-control
+                #email-cg.control-group
+                div.form-group
+                    label.control-label.col-md-2(for='email-tf') Email
+                    div.col-md-6
+                        input#email-tf.input-xlarge(type='text', name='email', value= user.email).required.form-control
+                //#clist-cg.control-group
+                //div.form-group
+                    label.control-label.col-md-2(for='country-list') Location
+                    div.col-md-6
+                        select(name='country').form-control
+                            each item in countries
+                                option(selected=item.name == user.country)= item.name
+                hr
+                p#sub2.subheading
+                #user-cg.control-group
+                div.form-group
+                    label.control-label.col-md-2(for='user-tf') Username
+                    div.col-md-6
+                        input#user-tf.input-xlarge.disabled(type='text', name='user', value= user.user).required.form-control
+                #pass-cg.control-group
+                div.form-group
+                    label.control-label.col-md-2(for='pass-tf') Password
+                    div.col-md-6
+                        input#pass-tf.input-xlarge(type='password', name='pass', value='').required.form-control
+                div(style="float:right").form-group
+                    button(type='button')#account-form-btn1.btn.btn-default.btn-lg Cancelar
+                    button(type='submit')#account-form-btn2.btn.btn-primary.btn-lg Guardar
 
 // display form errors in a custom modal window //
 
