@@ -26,7 +26,7 @@ var TripSchema = new Schema({
     comments: [{ type: ObjectId, ref: 'Comment'}]
 });
 
-
+/*
 CommentSchema.plugin(relationships, {
     belongsTo : "Account"
     , through   : "user"
@@ -40,7 +40,7 @@ TripSchema.plugin(relationships, {
 AccountSchema.plugin(relationships, {
     hasMany   : "Trip"
     , through   : "trips"
-});
+});*/
 
 //AccountSchema.habtm('Trip');
 //TripSchema.habtm('User');
