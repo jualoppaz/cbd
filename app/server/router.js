@@ -4,7 +4,7 @@ var DBM           = require('./modules/data-base-manager');
 var EM            = require('./modules/email-dispatcher');
 var mongoose      = require('mongoose'),
     Schema        = mongoose.Schema,
-    relationships = require('mongoose-relationships');
+    relationships = require('mongoose-relationship');
 
 var ObjectID = require('mongodb').ObjectID;
 
