@@ -3,9 +3,7 @@ var CT            = require('./modules/country-list');
 var DBM           = require('./modules/data-base-manager');
 var EM            = require('./modules/email-dispatcher');
 var mongoose      = require('mongoose'),
-    Schema        = mongoose.Schema,
-    relationships = require('mongoose-relationship');
-
+    Schema        = mongoose.Schema;
 var ObjectID = require('mongodb').ObjectID;
 
 var AccountSchema = new Schema({
