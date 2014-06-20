@@ -1,0 +1,85 @@
+
+extends layout
+
+block content
+    div(ng-app="angularDiagram")
+        div(ng-controller="diagramController")
+            header.navbar.navbar-fixed-top.navbar-inverse
+                div.navbar-inner
+                    div.container-fluid
+                        div.navbar-header
+                            button.navbar-toggle(type="button", data-toggle="collapse", data-target=".bs-navbar-collapse")
+                                span.sr-only Toggle navigation
+                                span.icon-bar
+                                span.icon-bar
+                                span.icon-bar
+                            a(href="/index").navbar-brand Inicio
+                        nav.collapse.navbar-collapse.bs-navbar-collapse(role="navigation")
+                            ul.nav.navbar-nav.navbar-right
+                                li
+                                    a(ng-bind-template="¡Hola, {{username}}!")
+                                li
+                                    button#btn-logout.btn.btn-primary(data-toggle="modal", data-target="#myModal", style="margin-top:7px")
+                                        i.icon-lock.icon-white
+                                        |  Cerrar sesión
+
+            div.panel.panel-body.col-md-12(style="padding-top: 100px; padding-bottom:100px")
+                div.col-md-2.centrar.col-md-offset-1
+                    div
+                        a(href="#")
+                            i.fa.fa-desktop.fa-5x
+                    div
+                        img(ng-src="/img/jade.png", height="100", width="200", style="margin-top: 20px; clear:both")
+                div.centrar
+                    div(style="float:left").centrar
+                        a.red
+                            i.fa.fa-long-arrow-left.fa-3x
+                    div(style="float:left")
+                        a.red
+                            i.fa.fa-long-arrow-right.fa-3x
+                div.col-md-2.centrar
+                    div
+                        a(href="#").red
+                            i.fa.fa-code-fork.fa-5x
+                    div
+                        img(ng-src="/img/angular.png", height="100", width="100", style="margin-top: 20px")
+                div.centrar
+                    div(style="float:left").centrar
+                        a.green
+                            i.fa.fa-long-arrow-left.fa-3x
+                    div(style="float:left")
+                        a.red
+                            i.fa.fa-long-arrow-right.fa-3x
+                div.col-md-2.centrar
+                    div
+                        a(href="#").green
+                            i.fa.fa-building.fa-5x
+                    div
+                        img(ng-src="/img/nodejs.png", height="80", width="220", style="margin-top: 20px")
+                div.centrar
+                    div(style="float:left").centrar
+                        a.gray
+                            i.fa.fa-long-arrow-left.fa-3x
+                    div(style="float:left")
+                        a.green
+                            i.fa.fa-long-arrow-right.fa-3x
+                div.col-md-2.centrar
+                    div
+                        a(href="#").gray
+                            i.fa.fa-database.fa-5x
+                    div
+                        img(ng-src="/img/mongodb.png", height="80", width="200", style="margin-top: 20px")
+
+        include modals/alert
+        include modals/confirm
+
+block scripts
+    script(src='/vendor/jquery.min.js')
+    script(src='/vendor/jquery.form.js')
+    script(src='/vendor/bootstrap-modal.js')
+    script(src='/vendor/bootstrap-transition.js')
+    script(src='/js/views/diagram.js')
+    script(src='/js/controllers/diagramController.js')
+    script(src='/js/form-validators/accountValidator.js')
+    script(src='/js/angular.js')
+    script(src='/js/angular/angularDiagram.js')

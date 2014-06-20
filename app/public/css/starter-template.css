@@ -1704,7 +1704,9 @@ footer {
     color: #faa732;
 }
 
-
+.gray{
+    color: #808080;
+}
 
 /*
 .login-form-submit{
@@ -1724,6 +1726,10 @@ a:hover.hover-red{
 
 .izquierda{
     text-align: left;
+}
+
+.derecha{
+    text-align: right;
 }
 
 body{
@@ -1770,4 +1776,8 @@ body{
 
 .offset-comment{
     margin-left: 4.17%;
+}
+
+.centrar{
+    text-align: center !important;
 }
