@@ -49,12 +49,18 @@ block content
                                 h3(ng-bind-template="{{trip.price}} euros").precio
                             div(ng-show="!precioMayorQueCero()")
                                 h3(ng-bind-template="{{free}}").precio
-            div.panel.panel-body.col-md-10.col-md-offset-1
+            div.panel.panel-body.col-md-10.col-md-offset-1(style="padding-left:30px; padding-right: 25px")
                 h3(style="text-align:justify; margin-top: 10px; margin-left:10px", ng-bind-template="{{trip.description}}").blue
-            div.panel.panel-body.col-md-3-5.col-md-offset-1
+            div.panel.panel-body.col-md-3-5.col-md-offset-1(style="padding-left:30px; padding-right: 25px")
                 h1.orange Alumnos inscritos
+                div(ng-repeat="user in users")
+                    h3(ng-bind-template="{{$index + 1}}. {{user.name}}").blue
+                form
+                    div(ng-show="!usuarioInscrito()").centrar.form-group
+                        button(ng-click="apuntarse()").btn-danger.btn-large Apuntarse
 
-            div.panel.panel-body.col-md-6.offset-comment
+
+            div.panel.panel-body.col-md-6.offset-comment(style="padding-left:30px; padding-right: 25px")
                 h1.red Comentarios
                 form(ng-show="excursionRealizada()")
                     textarea(placeholder="Escribe un comentario").form-control.nuevo-comentario

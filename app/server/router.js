@@ -76,7 +76,7 @@ module.exports = function(app) {
 			});
 		}
 	});
-	
+
 	app.post('/', function(req, res){
 		DBM.manualLogin(req.param('user'), req.param('pass'), function(e, o){
 			if (!o){
@@ -91,9 +91,9 @@ module.exports = function(app) {
 			}
 		});
 	});
-	
+
 // logged-in user homepage //
-	
+
 	app.get('/home', function(req, res) {
 	    if (req.session.user == null){
 	// if user is not logged-in redirect back to login page //
@@ -106,7 +106,7 @@ module.exports = function(app) {
 			});
 	    }
 	});
-	
+
 	app.post('/home', function(req, res){
 		if (req.param('user') != undefined) {
 			DBM.updateAccount({
@@ -123,7 +123,7 @@ module.exports = function(app) {
 			// update the user's login cookies if they exists //
 					if (req.cookies.user != undefined && req.cookies.pass != undefined){
 						res.cookie('user', o.user, { maxAge: 900000 });
-						res.cookie('pass', o.pass, { maxAge: 900000 });	
+						res.cookie('pass', o.pass, { maxAge: 900000 });
 					}
 					res.send('ok', 200);
 				}
@@ -178,6 +178,35 @@ module.exports = function(app) {
         }
     });
 
+    app.post('/trip', function(req, res){
+        if (req.param('user') != undefined) {
+            DBM.updateAccount({
+                user 		: req.param('user'),
+                name 		: req.param('name'),
+                email 		: req.param('email'),
+                country 	: req.param('country'),
+                pass		: req.param('pass')
+            }, function(e, o){
+                if (e){
+                    res.send('error-updating-account', 400);
+                }	else{
+                    req.session.user = o;
+                    // update the user's login cookies if they exists //
+                    if (req.cookies.user != undefined && req.cookies.pass != undefined){
+                        res.cookie('user', o.user, { maxAge: 900000 });
+                        res.cookie('pass', o.pass, { maxAge: 900000 });
+                    }
+                    res.send('ok', 200);
+                }
+            });
+        }	else if (req.param('logout') == 'true'){
+            console.log("Logout: servidor");
+            res.clearCookie('user');
+            res.clearCookie('pass');
+            req.session.destroy(function(e){ res.send('ok', 200); });
+        }
+    });
+
     app.get('/trips/:id', function(req, res) {
         if (req.session.user == null){
             // if user is not logged-in redirect back to login page //
@@ -190,13 +219,13 @@ module.exports = function(app) {
             });
         }
     });
-	
+
 // creating new accounts //
-	
+
 	app.get('/signup', function(req, res) {
 		res.render('signup', {  title: 'Signup', countries : CT });
 	});
-	
+
 	app.post('/signup', function(req, res){
 		DBM.addNewAccount({
 			name 	: req.param('name'),
@@ -249,7 +278,7 @@ module.exports = function(app) {
 			}
 		})
 	});
-	
+
 	app.post('/reset-password', function(req, res) {
 		var nPass = req.param('pass');
 	// retrieve the user's email from the session to lookup their account and reset password //
@@ -264,15 +293,15 @@ module.exports = function(app) {
 			}
 		})
 	});
-	
+
 // view & delete accounts //
-	
+
 	app.get('/print', function(req, res) {
 		DBM.getAllRecords( function(e, accounts){
 			res.render('print', { title : 'Account List', accts : accounts });
 		})
 	});
-	
+
 	app.post('/delete', function(req, res){
 		DBM.deleteAccount(req.body.id, function(e, obj){
 			if (!e){
@@ -284,10 +313,10 @@ module.exports = function(app) {
 			}
 	    });
 	});
-	
+
 	app.get('/reset', function(req, res) {
 		DBM.delAllRecords(function(){
-			res.redirect('/print');	
+			res.redirect('/print');
 		});
 	});
 
@@ -308,10 +337,9 @@ module.exports = function(app) {
         DBM.findTripById(req.params.id, function(err, excursion){
             if(err){
                 res.send(err);
+            }else{
+                res.json(excursion);
             }
-            res.json(excursion);
-            console.log("JSON: ");
-            console.log(excursion);
        });
     });
 
@@ -328,19 +356,19 @@ module.exports = function(app) {
     });
     */
 
-    app.post('/api/trips/:id/users', function(req, res) {
-       DBM.addNewUserToTrip(req.params.id, req.session.user, function(err, trip){
-            if(err){
-                res.send(err);
-            }else{
-                res.json(trip);
-            }
-       });
-    });
-
     app.get('/api/user', function(req, res) {
        res.send(req.session.user.name);
     });
+
+    app.get('/api/users/:id', function(req, res) {
+        DBM.findUserById(req.params.id, function(err, user){
+            if(err){
+                res.send(err);
+            }else{
+                res.send(user);
+            }
+        });
+    })
 
     app.get('/diagrams', function(req, res) {
         if (req.session.user == null){
@@ -350,7 +378,102 @@ module.exports = function(app) {
             res.render('diagrams');
         }
     });
-	
+
+    /*
+    app.post('/api/trips/:id/users', function(req, res) {
+
+    });*/
+
+    /*
+    app.get('/api/trips/:id/users', function(req, res) {
+        DBM.findTripById(req.params.id, function(err, trip){
+            console.log("Paso x aki");
+            if(err){
+                console.log("Error");
+                res.send(err);
+            }else{
+                var users = {"users": []};
+                console.log("Usuarios");
+                console.log(trip.users);
+                console.log("Usuario 1");
+                console.log(trip.users[1].user);
+                for(i=0; i<trip.users.length; i++){
+                    console.log("i: " + i);
+                    console.log("Id del usuario: " + trip.users[i].user);
+                    DBM.findUserById(String(trip.users[i].user), function(err2, user){
+                        if(err2){
+                            console.log("Error");
+                            res.send(err2);
+                        }else{
+                            console.log("Numero de usuarios: " + trip.users.length);
+                            console.log("i: " + i);
+                            var usuario = {"user": user.name};
+                            users.users.push(usuario);
+
+                            console.log("Anadimos el usuario: " + user.name);
+                            console.log("JSON: ");
+                            console.log(users);
+                        }
+                    });
+                    res.send(trip);
+                }
+            }
+        });
+    });
+    */
+
+    app.get('/api/trips/:id/users', function(req, res) {
+        DBM.findUsersByTripId(req.params.id, function(err, users){
+            if(err){
+                res.send(err);
+            }else{
+                res.send(users[0]);
+                //Enviamos la primera posicion para enviar el documento suelto, y no dentro de una coleccion
+            }
+        });
+    });
+
+    /*  OPCION 2: Si los usuarios no se actualizan justo despues de hacer el insert, podemos hacer la
+        peticion anidada con Angular*/
+
+    /*
+    app.post('/api/trips/:id/users', function(req, res) {
+        console.log("Datos del usuario logueado");
+        console.log("nombre: " + req.session.user.name);
+        console.log("user: " + req.session.user.user);
+        DBM.addNewUserToTrip(req.params.id, req.session.user, function(err, users){
+            if(err){
+                console.log("Error");
+                res.send(err);
+            }else{
+                res.send("Actualizado");
+            }
+        });
+    });
+    */
+
+    app.post('/api/trips/:id/users', function(req, res) {
+        console.log("Datos del usuario logueado");
+        console.log("nombre: " + req.session.user.name);
+        console.log("user: " + req.session.user.user);
+        DBM.addNewUserToTrip(req.params.id, req.session.user, function(err, users){
+            if(err){
+                console.log("Error");
+                res.send(err);
+            }else{
+                DBM.findUsersByTripId(req.params.id, function(err2, users2) {
+                   if(err2) {
+                       res.send(err2);
+                   }else{
+                       console.log("Usuarios actualizados");
+                       console.log(users2[0]);
+                       res.send(users2[0]);
+                   }
+                });
+            }
+        });
+    });
+
 	app.get('*', function(req, res) { res.render('404', { title: 'Page Not Found'}); });
 
 };

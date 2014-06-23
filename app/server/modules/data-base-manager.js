@@ -262,18 +262,25 @@ exports.findTripById = function(id, callback)
 
 exports.findUsersByTripId = function(id, callback)
 {
-    trips.find({ $query: {users:1}}).toArray(
+    trips.find({_id: getTripObjectId(id)}, {users:1, _id:0}).toArray(
         function(e, res){
             if(e) callback(e)
             else callback(null, res)
         });
 };
 
+exports.findUserById = function(id, callback)
+{
+    accounts.findOne({_id: getObjectId(id)},
+        function(e, res) {
+            if (e) callback(e)
+            else callback(null, res)
+        });
+};
+
 exports.addNewUserToTrip = function(tripId, user, callback)
 {
-    var users = findUsersByTripId(tripId);
-    users.append(user);
-    trips.update({_id: tripId}, {users:users}).toArray(
+    trips.update({_id: getObjectId(tripId)},{$addToSet: {'users': {name: user.name,user: user.user}}},
         function(e, res){
             if(e) callback(e)
             else callback(null, res)

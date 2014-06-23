@@ -4,6 +4,7 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
     $scope.trip = {};
     $scope.free = "";
     $scope.username = "";
+    $scope.users = {};
 
     var url = window.location.href.split("/");
     var tripId = url[url.length - 1];
@@ -27,10 +28,54 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
 
         });
 
+    $http.get('/api/trips/' + String(tripId) + "/users")
+        .success(function(data) {
+            $scope.users = data.users;
+        })
+        .error(function(data) {
+
+        });
+
+    $scope.apuntarse = function(){
+        $http.post('/api/trips/' + String(tripId) + "/users", {})
+            .success(function(data) {
+
+
+                $scope.users = data.users;
+                alert("OK: " + data.users.user);
+
+                /*   OPCION 2: Si no se actualizan los usuarios, podemos realizar una peticion get dentro del post */
+
+                /*
+                $http.get('/api/trips/' + String(tripId) + "/users")
+                    .success(function(data) {
+                        $scope.users = data.users;
+                    })
+                    .error(function(data) {
+
+                    });*/
+
+            })
+            .error(function(data) {
+                alert("FAIL: " + data);
+            });
+    };
+
     $scope.precioMayorQueCero = function(){
         //alert("Funcion del precio");
         return $scope.trip.price > 0;
     };
+
+    $scope.usuarioInscrito = function(){
+        if($scope.users){
+            for(var i=0; i<$scope.users.length; i++){
+                if($scope.users[i].name == $scope.username){
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
 
     $scope.excursionRealizada = function(){
         var fechaActual = new Date();
