@@ -42,7 +42,7 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
 
 
                 $scope.users = data.users;
-                alert("OK: " + data.users.user);
+                alert("Ha sido inscrito correctamente. Gracias.");
 
                 /*   OPCION 2: Si no se actualizan los usuarios, podemos realizar una peticion get dentro del post */
 
