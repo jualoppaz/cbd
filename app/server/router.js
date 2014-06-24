@@ -358,7 +358,11 @@ module.exports = function(app) {
     */
 
     app.get('/api/user', function(req, res) {
-       res.send(req.session.user.user);
+        if(req.session.user == null){
+            res.send("Esta función es sólo para usuarios logueados.");
+        }else{
+            res.send(req.session.user.user);
+        }
     });
 
     app.get('/api/users/:id', function(req, res) {
@@ -508,6 +512,6 @@ module.exports = function(app) {
         });
     });
 
-	app.get('*', function(req, res) { res.render('404', { title: 'Page Not Found'}); });
+	app.get('*', function(req, res) { res.render('404', { title: 'Página no encontrada'}); });
 
 };
