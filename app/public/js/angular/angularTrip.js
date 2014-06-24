@@ -62,7 +62,7 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
     };
 
     $scope.precioMayorQueCero = function(){
-        //alert("Funcion del precio");
+        alert("El precio de la excursion es: " + String($scope.trip.price));
         return $scope.trip.price > 0;
     };
 	
