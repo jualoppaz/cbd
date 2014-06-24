@@ -8,9 +8,9 @@ Si te gusta alguna excursión podrás apuntarte, ver los alumnos que acudirán, 
 ###Tecnologías
 En este proyecto he usado las siguientes tecnologías: 
 
+* <b>MongoDB</b>: como base de datos de la aplicación.
 * <b>NodeJS</b>: para la implementación del servidor.
 * <b>AngularJS</b>: para el cliente.
-* <b>MongoDB</b>: como base de datos de la aplicación.
 * <b>Jade</b>: para la simplificación de las plantillas HTML.
 
 ##English##
@@ -21,7 +21,8 @@ In this project you can log in as a school user and you can see the avaible scho
 
 ###Technologies
 In this project I have used:
+
+* <b>MongoDB</b>: as the database to storage the application data.
 * <b>NodeJS</b>: for the server implementation.
 * <b>AngularJS</b>: for the client side.
-* <b>MongoDB</b>: as the database to storage the application data.
 * <b>Jade</b>: for make the templates easier than HTML.
