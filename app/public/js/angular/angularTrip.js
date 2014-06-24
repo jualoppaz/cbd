@@ -65,7 +65,7 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
         //alert("Funcion del precio");
         return $scope.trip.price > 0;
     };
-
+	
     $scope.usuarioInscrito = function(){
         if($scope.users){
             for(var i=0; i<$scope.users.length; i++){
