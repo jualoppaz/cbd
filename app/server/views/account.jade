@@ -9,12 +9,12 @@ input(type='hidden', value= user._id)#userId
     .col-md-4.col-md-offset-4(style="margin-top:20px")
         form(method="post", role="form")#account-form.panel.panel-body.form-horizontal
             h1
-            p#sub1.subheading Please tell us a little about yourself.
+            p#sub1.subheading Por favor, rellena este formulario con tus datos.
             hr
             div
                 #name-cg.control-group
                 div.form-group
-                    label.control-label.col-md-2(for='name-tf') Name
+                    label.control-label.col-md-2(for='name-tf') Nombre
                     div.col-md-6
                         input#name-tf(type='text', name='name', value= user.name).required.form-control
                 #email-cg.control-group
@@ -33,12 +33,12 @@ input(type='hidden', value= user._id)#userId
                 p#sub2.subheading
                 #user-cg.control-group
                 div.form-group
-                    label.control-label.col-md-2(for='user-tf') Username
+                    label.control-label.col-md-2(for='user-tf') Usuario
                     div.col-md-6
                         input#user-tf.input-xlarge.disabled(type='text', name='user', value= user.user).required.form-control
                 #pass-cg.control-group
                 div.form-group
-                    label.control-label.col-md-2(for='pass-tf') Password
+                    label.control-label.col-md-2(for='pass-tf') Contraseña
                     div.col-md-6
                         input#pass-tf.input-xlarge(type='password', name='pass', value='').required.form-control
                 div(style="float:right").form-group
