@@ -357,7 +357,7 @@ module.exports = function(app) {
     */
 
     app.get('/api/user', function(req, res) {
-       res.send(req.session.user.name);
+       res.send(req.session.user.user);
     });
 
     app.get('/api/users/:id', function(req, res) {

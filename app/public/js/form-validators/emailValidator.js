@@ -21,7 +21,7 @@ EmailValidator.prototype.validateEmail = function(e)
 
 EmailValidator.prototype.showEmailAlert = function(m)
 {
-	this.retrievePasswordAlert.attr('class', 'alert alert-error');
+	this.retrievePasswordAlert.attr('class', 'alert alert-danger');
 	this.retrievePasswordAlert.html(m);
 	this.retrievePasswordAlert.show();
 }

@@ -298,7 +298,7 @@ exports.addNewUserToTrip = function(tripId, user, callback)
 
 exports.addNewCommentToTrip = function(tripId, user, comment, callback)
 {
-    trips.update({_id: getObjectId(tripId)},{$push: {'comments': {text: comment,user: user.user}}},
+    trips.update({_id: getObjectId(tripId)},{$push: {'comments': {text: comment,user: user.name}}},
         function(e, res){
             if(e) callback(e)
             else callback(null, res)

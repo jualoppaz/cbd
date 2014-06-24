@@ -57,7 +57,7 @@ block content
                     h3(ng-bind-template="{{$index + 1}}. {{user.name}}").blue
                 form
                     div(ng-show="!usuarioInscrito()").centrar.form-group
-                        button(ng-click="apuntarse()").btn-danger.btn-large Apuntarse
+                        button(ng-click="apuntarse()").btn.btn-danger.btn-large Apuntarse
 
 
             div.panel.panel-body.col-md-6.offset-comment(style="padding-left:30px; padding-right: 25px")
@@ -73,7 +73,7 @@ block content
                 form(ng-show="excursionRealizada()")
                     textarea(placeholder="Escribe un comentario", ng-model="formData.comment").form-control.nuevo-comentario#comentario
                     div.centrar.form-group(style="margin-top:25px")
-                        button(ng-click="comentar()").btn.btn-danger.btn-large Apuntarse
+                        button(ng-click="comentar()").btn.btn-danger.btn-large Enviar
 
         include modals/alert
         include modals/confirm

@@ -25,7 +25,12 @@ block content
 
             div.panel.panel-body.terms-and-conditions.col-md-8.col-md-offset-2
                 h1(style="text-align: center").red Excursiones disponibles
-            div.panel.panel-body.terms-and-conditions.col-md-8.col-md-offset-2(ng-repeat="trip in trips", style="text-align:center")
+            div.panel.panel-body.terms-and-conditions.col-md-8.col-md-offset-2
+                div.pull-left
+                    h3.blue Buscar por texto:
+                div
+                    input(ng-model="search", style="margin-top:20px; margin-left: 10px")
+            div.panel.panel-body.terms-and-conditions.col-md-8.col-md-offset-2(ng-repeat="trip in trips | filter:search", style="text-align:center")
                 div(style="text-align:left")
                     h1(style="margin-bottom:30px").green
                         a(ng-href="/trips/{{trip._id}}", ng-bind-template="{{$index + 1}}. {{trip.title}} ({{trip.moment | date:'dd/MM/yyyy'}})").green.hover-red

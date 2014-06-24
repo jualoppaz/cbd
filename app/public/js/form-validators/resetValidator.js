@@ -5,6 +5,8 @@ function ResetValidator(){
     this.setPassword = $('#set-password');
     this.setPassword.modal({ show : false, keyboard : false, backdrop : 'static' });
     this.setPasswordAlert = $('#set-password .alert');
+
+    $('#get-credentials').modal('show');
 }
 
 ResetValidator.prototype.validatePassword = function(s)
@@ -19,7 +21,7 @@ ResetValidator.prototype.validatePassword = function(s)
 
 ResetValidator.prototype.showAlert = function(m)
 {
-	this.setPasswordAlert.attr('class', 'alert alert-error');
+	this.setPasswordAlert.attr('class', 'alert alert-danger');
 	this.setPasswordAlert.html(m);
 	this.setPasswordAlert.show();
 }
