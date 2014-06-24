@@ -1,10 +1,12 @@
 var angularTrip = angular.module('angularTrip', []);
 
 angularTrip.controller('tripController', function($scope, $filter, $http) {
+    $scope.formData = {};
     $scope.trip = {};
     $scope.free = "";
     $scope.username = "";
     $scope.users = {};
+    $scope.comments = {};
 
     var url = window.location.href.split("/");
     var tripId = url[url.length - 1];
@@ -30,7 +32,15 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
 
     $http.get('/api/trips/' + String(tripId) + "/users")
         .success(function(data) {
-            $scope.users = data.users;
+            $scope.users = data;
+        })
+        .error(function(data) {
+
+        });
+
+    $http.get('/api/trips/' + String(tripId) + "/comments")
+        .success(function(data) {
+            $scope.comments = data;
         })
         .error(function(data) {
 
@@ -39,9 +49,7 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
     $scope.apuntarse = function(){
         $http.post('/api/trips/' + String(tripId) + "/users", {})
             .success(function(data) {
-
-
-                $scope.users = data.users;
+                $scope.users = data;
                 alert("Ha sido inscrito correctamente. Gracias.");
 
                 /*   OPCION 2: Si no se actualizan los usuarios, podemos realizar una peticion get dentro del post */
@@ -49,11 +57,35 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
                 /*
                 $http.get('/api/trips/' + String(tripId) + "/users")
                     .success(function(data) {
-                        $scope.users = data.users;
+                        $scope.users = data;
                     })
                     .error(function(data) {
 
                     });*/
+
+            })
+            .error(function(data) {
+                alert("FAIL: " + data);
+            });
+    };
+
+    $scope.comentar = function(){
+        $http.post('/api/trips/' + String(tripId) + "/comments", $scope.formData)
+            .success(function(data) {
+                $scope.comments = data;
+                angular.element('#comentario').val("");
+                alert("Su comentario ha sido publicado correctamente. Gracias.");
+
+                /*   OPCION 2: Si no se actualizan los usuarios, podemos realizar una peticion get dentro del post */
+
+                /*
+                 $http.get('/api/trips/' + String(tripId) + "/users")
+                 .success(function(data) {
+                 $scope.users = data.users;
+                 })
+                 .error(function(data) {
+
+                 });*/
 
             })
             .error(function(data) {

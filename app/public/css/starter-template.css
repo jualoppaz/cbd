@@ -508,11 +508,13 @@ header .container {
      border-radius: 2px !important;
 }
 
-.thumbnail, .panel, .btn, .border-rect, .badge, .progress {
+.thumbnail, .btn, .border-rect, .badge, .progress {
     border-radius: 2px !important;
 }
 
 /*.thumbnail,*/
+
+
 .panel, .border-rect {
     border: 1px solid #d8d8d8 !important;
 }
@@ -1783,4 +1785,16 @@ body{
 
 .centrar{
     text-align: center !important;
+}
+
+.panel-title{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.trip-comment{
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right:5px;
+    margin-bottom: 0px;
 }

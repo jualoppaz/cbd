@@ -427,7 +427,18 @@ module.exports = function(app) {
             if(err){
                 res.send(err);
             }else{
-                res.send(users[0]);
+                res.send(users[0].users);
+                //Enviamos la primera posicion para enviar el documento suelto, y no dentro de una coleccion
+            }
+        });
+    });
+
+    app.get('/api/trips/:id/comments', function(req, res) {
+        DBM.findCommentsByTripId(req.params.id, function(err, users){
+            if(err){
+                res.send(err);
+            }else{
+                res.send(users[0].comments);
                 //Enviamos la primera posicion para enviar el documento suelto, y no dentro de una coleccion
             }
         });
@@ -466,9 +477,31 @@ module.exports = function(app) {
                        res.send(err2);
                    }else{
                        console.log("Usuarios actualizados");
-                       console.log(users2[0]);
-                       res.send(users2[0]);
+                       console.log(users2[0].users);
+                       res.send(users2[0].users);
                    }
+                });
+            }
+        });
+    });
+
+    app.post('/api/trips/:id/comments', function(req, res) {
+        console.log("Datos del usuario logueado");
+        console.log("nombre: " + req.session.user.name);
+        console.log("user: " + req.session.user.user);
+        DBM.addNewCommentToTrip(req.params.id, req.session.user, req.body.comment, function(err, comments){
+            if(err){
+                console.log("Error");
+                res.send(err);
+            }else{
+                DBM.findCommentsByTripId(req.params.id, function(err2, comments2) {
+                    if(err2) {
+                        res.send(err2);
+                    }else{
+                        console.log("Comentarios actualizados");
+                        console.log(comments2[0].comments);
+                        res.send(comments2[0].comments);
+                    }
                 });
             }
         });

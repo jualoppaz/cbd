@@ -269,6 +269,15 @@ exports.findUsersByTripId = function(id, callback)
         });
 };
 
+exports.findCommentsByTripId = function(id, callback)
+{
+    trips.find({_id: getTripObjectId(id)}, {comments:1, _id:0}).toArray(
+        function(e, res){
+            if(e) callback(e)
+            else callback(null, res)
+        });
+};
+
 exports.findUserById = function(id, callback)
 {
     accounts.findOne({_id: getObjectId(id)},
@@ -287,4 +296,12 @@ exports.addNewUserToTrip = function(tripId, user, callback)
         });
 };
 
+exports.addNewCommentToTrip = function(tripId, user, comment, callback)
+{
+    trips.update({_id: getObjectId(tripId)},{$push: {'comments': {text: comment,user: user.user}}},
+        function(e, res){
+            if(e) callback(e)
+            else callback(null, res)
+        });
+};
 

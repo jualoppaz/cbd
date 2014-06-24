@@ -27,7 +27,7 @@ block content
                 h1(style="text-align: center", ng-bind-template="{{trip.title}}").red
             div.panel.panel-body.col-md-10.col-md-offset-1(style="text-align:center")
                 div(style="float:left; margin-top: 25px").col-md-5
-                    img(ng-src="/img/{{trip.image}}", height="300", width="400", style="margin-left: 10px; margin-bottom: 10px")
+                    img(ng-src="/img/{{trip.image}}", height="300", width="400", style="margin-left: 10px; margin-bottom: 10px").col-md-12
                 div.col-md-7
                     h1(style="text-align: left;").separador-horizontal.green Detalles
                     div.row
@@ -62,8 +62,18 @@ block content
 
             div.panel.panel-body.col-md-6.offset-comment(style="padding-left:30px; padding-right: 25px")
                 h1.red Comentarios
+                div(ng-repeat="comment in comments")
+                    div.panel.panel-primary
+                        div.panel-heading
+                            h3(ng-bind-template="{{comment.user}}").panel-title
+                        div.panel-body
+                            i.fa.fa-quote-left.pull-left
+                            h3(ng-bind-template="{{comment.text}}").pull-left.trip-comment
+                            i.fa.fa-quote-right.pull-left
                 form(ng-show="excursionRealizada()")
-                    textarea(placeholder="Escribe un comentario").form-control.nuevo-comentario
+                    textarea(placeholder="Escribe un comentario", ng-model="formData.comment").form-control.nuevo-comentario#comentario
+                    div.centrar.form-group(style="margin-top:25px")
+                        button(ng-click="comentar()").btn.btn-danger.btn-large Apuntarse
 
         include modals/alert
         include modals/confirm
