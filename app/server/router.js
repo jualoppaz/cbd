@@ -6,6 +6,7 @@ var mongoose      = require('mongoose'),
     Schema        = mongoose.Schema;
 var ObjectId = require('mongodb').ObjectID;
 
+/*
 var AccountSchema = new Schema({
     name:        String,
     username:    String,
@@ -20,7 +21,7 @@ var CommentSchema = new Schema({
     //user: { type: ObjectId, ref: 'Account' }
     user: [AccountSchema]
 });
-
+*/
 /*
 var TripSchema = new Schema({
     title: String,
@@ -231,8 +232,8 @@ module.exports = function(app) {
 			name 	: req.param('name'),
 			email 	: req.param('email'),
 			user 	: req.param('user'),
-			pass	: req.param('pass'),
-			country : req.param('country')
+			pass	: req.param('pass')
+			//country : req.param('country')
 		}, function(e){
 			if (e){
 				res.send(e, 400);

@@ -26,16 +26,16 @@
       <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/server/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="429" column="39" selection-start="12328" selection-end="12328" vertical-scroll-proportion="0.0" vertical-offset="6895" max-vertical-offset="8789">
+            <state line="230" column="19" selection-start="6715" selection-end="6715" vertical-scroll-proportion="0.0" vertical-offset="3809" max-vertical-offset="8806">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/server/views/index.jade">
+      <file leaf-file-name="data-base-manager.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="42" selection-start="1599" selection-end="1599" vertical-scroll-proportion="-16.76" vertical-offset="108" max-vertical-offset="1020">
+            <state line="101" column="23" selection-start="2648" selection-end="2648" vertical-scroll-proportion="0.83497536" vertical-offset="1378" max-vertical-offset="5321">
               <folding />
             </state>
           </provider>
@@ -50,6 +50,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="trip.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/server/views/trip.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="93" selection-start="4200" selection-end="4200" vertical-scroll-proportion="-49.64" vertical-offset="0" max-vertical-offset="1615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="account.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/server/views/account.jade">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,10 +68,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="starter-template.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/public/css/starter-template.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1805" column="0" selection-start="29199" selection-end="29199" vertical-scroll-proportion="0.0" vertical-offset="30360" max-vertical-offset="30821">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/public/js/views/signup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="64" selection-start="790" selection-end="790" vertical-scroll-proportion="0.33251232" vertical-offset="358" max-vertical-offset="918">
+            <state line="29" column="64" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0" vertical-offset="358" max-vertical-offset="918">
               <folding />
             </state>
           </provider>
@@ -123,7 +141,6 @@
         <option value="$PROJECT_DIR$/app/public/js/controllers/diagramController.js" />
         <option value="$PROJECT_DIR$/app/public/js/angular/angularDiagram.js" />
         <option value="$PROJECT_DIR$/app/server/views/diagrams.jade" />
-        <option value="$PROJECT_DIR$/app/public/css/starter-template.css" />
         <option value="$PROJECT_DIR$/app/public/js/angular/angularTrip.js" />
         <option value="$PROJECT_DIR$/app/server/modules/data-base-manager.js" />
         <option value="$PROJECT_DIR$/app/public/js/form-validators/loginValidator.js" />
@@ -133,11 +150,12 @@
         <option value="$PROJECT_DIR$/app/server/views/modals/lost-password.jade" />
         <option value="$PROJECT_DIR$/app/server/modules/email-dispatcher.js" />
         <option value="$PROJECT_DIR$/app/server/views/login.jade" />
-        <option value="$PROJECT_DIR$/app/server/router.js" />
-        <option value="$PROJECT_DIR$/app/server/views/trip.jade" />
         <option value="$PROJECT_DIR$/app/server/views/index.jade" />
         <option value="$PROJECT_DIR$/app/server/views/account.jade" />
         <option value="$PROJECT_DIR$/app/public/js/views/signup.js" />
+        <option value="$PROJECT_DIR$/app/server/views/trip.jade" />
+        <option value="$PROJECT_DIR$/app/public/css/starter-template.css" />
+        <option value="$PROJECT_DIR$/app/server/router.js" />
       </list>
     </option>
   </component>
@@ -820,20 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="301" column="25" selection-start="7189" selection-end="7189" vertical-scroll-proportion="0.0" vertical-offset="4608" max-vertical-offset="5321">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/css/starter-template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1799" column="1" selection-start="29159" selection-end="29159" vertical-scroll-proportion="1.2771739" vertical-offset="30113" max-vertical-offset="30685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/form-validators/accountValidator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="42" selection-start="1248" selection-end="1478" vertical-scroll-proportion="0.0" vertical-offset="559" max-vertical-offset="1564">
@@ -911,27 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/views/trip.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="68" selection-start="3243" selection-end="3243" vertical-scroll-proportion="1.5751748" vertical-offset="51" max-vertical-offset="1615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="429" column="39" selection-start="12328" selection-end="12328" vertical-scroll-proportion="0.0" vertical-offset="6895" max-vertical-offset="8789">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="42" selection-start="1599" selection-end="1599" vertical-scroll-proportion="-16.76" vertical-offset="108" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/server/views/signup.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610">
@@ -948,7 +931,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/views/signup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="64" selection-start="790" selection-end="790" vertical-scroll-proportion="0.33251232" vertical-offset="358" max-vertical-offset="918">
+        <state line="29" column="64" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0" vertical-offset="358" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="42" selection-start="1599" selection-end="1599" vertical-scroll-proportion="1.138587" vertical-offset="108" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/css/starter-template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1805" column="0" selection-start="29199" selection-end="29199" vertical-scroll-proportion="0.0" vertical-offset="30360" max-vertical-offset="30821">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/views/trip.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="93" selection-start="4200" selection-end="4200" vertical-scroll-proportion="-49.64" vertical-offset="0" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="230" column="19" selection-start="6715" selection-end="6715" vertical-scroll-proportion="0.0" vertical-offset="3809" max-vertical-offset="8806">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="23" selection-start="2648" selection-end="2648" vertical-scroll-proportion="0.83497536" vertical-offset="1378" max-vertical-offset="5321">
           <folding />
         </state>
       </provider>

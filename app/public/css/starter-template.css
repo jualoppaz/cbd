@@ -1798,3 +1798,11 @@ body{
     margin-right:5px;
     margin-bottom: 0px;
 }
+
+.adapt{
+    word-break: break-all;
+}
+
+textarea{
+    resize:none;
+}
