@@ -96,6 +96,15 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
     $scope.precioMayorQueCero = function(){
         return $scope.trip.price > 0;
     };
+
+    $scope.hayComentarios = function(){
+        if($scope.trip.comments){
+            return $scope.trip.comments.length > 0;
+        }else{
+            return false;
+        }
+
+    };
 	
     $scope.usuarioInscrito = function(){
         if($scope.users){

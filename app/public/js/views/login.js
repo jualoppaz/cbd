@@ -21,7 +21,7 @@ $(document).ready(function(){
             if (status == 'success') window.location.href = '/index';
 		},
 		error : function(e){
-            lv.showLoginError('Fallo al iniciar sesión', 'Por favor, comprueba su usuario y su contraseña');
+            lv.showLoginError('Fallo al iniciar sesión', 'Por favor, compruebe su usuario y su contraseña');
 		}
 	}); 
 	$('#user-tf').focus();

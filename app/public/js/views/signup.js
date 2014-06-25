@@ -27,7 +27,7 @@ $(document).ready(function(){
 // customize the account signup form //
 	
 	$('#account-form h1').text('Registro');
-	$('#account-form #sub2').text('Elige tu usuario y contraseña');
+	$('#account-form #sub2').text('Elija su usuario y su contraseña');
 	$('#account-form-btn1').html('Cancelar');
 	$('#account-form-btn2').html('Guardar');
 	$('#account-form-btn2').addClass('btn-primary');
