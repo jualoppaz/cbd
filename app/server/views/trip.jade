@@ -66,11 +66,13 @@ block content
                 h1.red Comentarios
                 div(ng-show="excursionRealizada() && !hayComentarios()").alert.alert-info
                     | No hay comentarios. Sea el primero en comentar la excursión.
+                div(ng-show="!excursionRealizada()").alert.alert-danger
+                    | No se puede comentar hasta que se haya realizado la excursión.
                 div(ng-repeat="comment in comments")
-                    div.panel.panel-primary.adapt
+                    div.panel.panel-primary
                         div.panel-heading
                             h3(ng-bind-template="{{comment.user}}").panel-title
-                        div.panel-body
+                        div.panel-body.adapt
                             i.fa.fa-1.fa-quote-left.pull-left
                             h3(ng-bind-template="{{comment.text}}").pull-left.trip-comment
                             i.fa.fa-quote-right.pull-left

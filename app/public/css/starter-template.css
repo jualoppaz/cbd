@@ -1713,6 +1713,10 @@ footer {
 .purple{
     color: #4400FF;
 }
+
+.black{
+    color: #000000;
+}
 /*
 .login-form-submit{
     width: 85.0%;
@@ -1800,9 +1804,23 @@ body{
 }
 
 .adapt{
+
+    /*
+    text-align: justify;
     word-break: break-all;
+    */
+    width: 100%;
+    padding-right: 10px;
 }
 
 textarea{
     resize:none;
+}
+
+.adapt{
+    word-break: normal;
+}
+
+.adapt h3{
+    text-align: justify;
 }
