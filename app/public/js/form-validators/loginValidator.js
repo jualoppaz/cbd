@@ -24,10 +24,10 @@ function LoginValidator(){
 LoginValidator.prototype.validateForm = function()
 {
 	if ($('#user-tf').val() == ''){
-		this.showLoginError('Whoops!', 'Please enter a valid username');
+		this.showLoginError('Se ha producido un fallo', 'Introduzca un usuario válido');
 		return false;
 	}	else if ($('#pass-tf').val() == ''){
-		this.showLoginError('Whoops!', 'Please enter a valid password');
+		this.showLoginError('Se ha producido un fallo', 'PIntroduzca una contraseña válida');
 		return false;
 	}	else{
 		return true;

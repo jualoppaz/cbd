@@ -494,22 +494,40 @@ module.exports = function(app) {
         console.log("Datos del usuario logueado");
         console.log("nombre: " + req.session.user.name);
         console.log("user: " + req.session.user.user);
-        DBM.addNewCommentToTrip(req.params.id, req.session.user, req.body.comment, function(err, comments){
-            if(err){
-                console.log("Error");
-                res.send(err);
-            }else{
-                DBM.findCommentsByTripId(req.params.id, function(err2, comments2) {
-                    if(err2) {
-                        res.send(err2);
-                    }else{
-                        console.log("Comentarios actualizados");
-                        console.log(comments2[0].comments);
-                        res.send(comments2[0].comments);
-                    }
-                });
+
+        console.log("Comentario: " + req.body.comment);
+
+        var comentarioIncorrecto = false;
+        var palabras = req.body.comment.split(" ");
+        for(var i=0; i<palabras.length; i++){
+            if(palabras[i].length >27){
+                console.log("El comentario no es válido. Tiene palabras demasiado largas.");
+                comentarioIncorrecto = true;
             }
-        });
+        }
+
+        if(comentarioIncorrecto){
+            res.send({
+                error: "El comentario no es válido. No puede haber palabras de más de 27 caracteres."
+            });
+        }else{
+            DBM.addNewCommentToTrip(req.params.id, req.session.user, req.body.comment, function(err, comments){
+                if(err){
+                    console.log("Error");
+                    res.send(err);
+                }else{
+                    DBM.findCommentsByTripId(req.params.id, function(err2, comments2) {
+                        if(err2) {
+                            res.send(err2);
+                        }else{
+                            console.log("Comentarios actualizados");
+                            console.log(comments2[0].comments);
+                            res.send(comments2[0].comments);
+                        }
+                    });
+                }
+            });
+        }
     });
 
 	app.get('*', function(req, res) { res.render('404', { title: 'Página no encontrada'}); });

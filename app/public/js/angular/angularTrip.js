@@ -7,6 +7,7 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
     $scope.username = "";
     $scope.users = {};
     $scope.comments = {};
+    $scope.commentError = false;
 
     var url = window.location.href.split("/");
     var tripId = url[url.length - 1];
@@ -69,23 +70,18 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
             });
     };
 
-    $scope.comentar = function(){
+    $scope.comment = function(){
         $http.post('/api/trips/' + String(tripId) + "/comments", $scope.formData)
             .success(function(data) {
-                $scope.comments = data;
-                angular.element('#comentario').val("");
-                alert("Su comentario ha sido publicado correctamente. Gracias.");
-
-                /*   OPCION 2: Si no se actualizan los usuarios, podemos realizar una peticion get dentro del post */
-
-                /*
-                 $http.get('/api/trips/' + String(tripId) + "/users")
-                 .success(function(data) {
-                 $scope.users = data.users;
-                 })
-                 .error(function(data) {
-
-                 });*/
+                if(data.error){
+                    $scope.commentError = true;
+                    angular.element('#comentario').val("");
+                }else{
+                    $scope.commentError = false;
+                    $scope.comments = data;
+                    angular.element('#comentario').val("");
+                    alert("Su comentario ha sido publicado correctamente. Gracias.");
+                }
 
             })
             .error(function(data) {
@@ -96,6 +92,10 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
     $scope.precioMayorQueCero = function(){
         return $scope.trip.price > 0;
     };
+
+    $scope.invalidComment = function(){
+        return $scope.commentError;
+    }
 
     $scope.hayComentarios = function(){
         if($scope.trip.comments){
