@@ -13,6 +13,18 @@ En este proyecto he usado las siguientes tecnologías:
 * <b>AngularJS</b>: para el cliente.
 * <b>Jade</b>: para la simplificación de las plantillas HTML.
 
+
+###Casos de uso
+Como usuario podemos:
+
+* - Registrarnos en la aplicación.
+* - Loguearnos en la aplicación.
+* - Listar todas las excursiones disponibles.
+* - Buscar excursiones por palabras contenidas en el título o en la descripción.
+* - Consultar la información asociada a una excursión.
+* - Inscribirnos en una excursión que aún no se ha realizado.
+* - Comentar una excursión que ya ha sido realizada.
+
 ##English##
 This project was forked by https://github.com/braitsch/node-login .
 
@@ -26,3 +38,14 @@ In this project I have used:
 * <b>NodeJS</b>: for the server implementation.
 * <b>AngularJS</b>: for the client side.
 * <b>Jade</b>: for make the templates easier than HTML.
+
+###User cases
+As user we can:
+
+* - Create an account.
+* - Log in the application.
+* - Retrieve all the avaible trips.
+* - Search for any trip that contains the specified word in the title or description.
+* - See all the related information about the selected trip.
+* - Sign up in a no finished trip.
+* - Comment a finished trip.
