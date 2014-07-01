@@ -30,8 +30,8 @@ Como usuario podemos:
 ###Estructura del proyecto
 El proyecto está estructurado de la siguiente forma:
 
-* <b>app</b>: carpeta con el código fuente de la aplicación
-  * <b>public</b>: archivos estáticos de la aplicación
+* <b>app</b>: carpeta con el código fuente de la aplicación.
+  * <b>public</b>: archivos estáticos de la aplicación.
     * <b>css</b>: hojas de estilo.
       * bootstrap-theme.css
       * bootstrap.css
@@ -134,3 +134,85 @@ As user we can:
 * See all the related information about the selected trip.
 * Sign up in a no finished trip.
 * Comment a finished trip.
+
+
+###Project structure
+The project is structure as follows:
+
+* <b>app</b>: application source code.
+  * <b>public</b>: application static files.
+    * <b>css</b>: stylesheets.
+      * bootstrap-theme.css
+      * bootstrap.css
+      * font-awesome.css
+      * starter-template.css
+      * style.css
+      * style.styl
+    * <b>fonts</b>: font-awesome fonts for icons.
+      * fontawesome-webfont.eot
+      * fontawesome-webfont.svg
+      * fontawesome-webfont.ttf
+      * fontawesome-webfont.woff
+    * <b>img</b>: application images.
+    * <b>js</b>: javascript code.
+      * <b>angular</b>: angular controllers for templates.
+        * angularDiagrams.js
+        * angularIndex.js
+        * angularTrip.js
+      * <b>controllers</b>: jQuery controllers for templates.
+        * diagramController.js
+        * homeController.js (replaced by indexController.js)
+        * indexController.js
+        * loginController.js
+        * signupController.js
+        * tripController.js
+      * <b>form-validators</b>: jQuery validator functions.
+        * accountValidator.js
+        * emailValidator.js
+        * loginValidator.js
+        * resetValidator.js
+      * <b>views</b>: calls to jQuery functions views.
+        * diagram.js
+        * home.js
+        * index.js
+        * login.js
+        * reset.js
+        * singup.js
+        * trip.js
+      * angular.js: AngularJS library.
+    * <b>vendor</b>: initial css and javascript. Replaced by the files contained in the "css" folder.
+      * bootstrap-modal.js
+      * bootstrap-transition.js
+      * bootstrap.min.css
+      * jquery.form.js
+      * jquery.min.js
+  * <b>server</b>: server files.
+    * <b>modules</b>: defined modules for specific functionalities.
+      * account-manager.js
+      * country-list.js (not currently used)
+      * data-base-manager.js (Queries are defined here)
+      * email-dispatcher.js: application emails manager.
+      * email-settings.js: file where our mail credentials are specified.
+    * <b>views</b>: application views.
+      * <b>modals</b>: bootstrap modals.
+        * alert.jade
+        * confirm.jade
+        * form-errors.jade
+        * lost-password.jade
+        * reset-password.jade
+      * 404.jade
+      * account.jade
+      * diagrams.jade
+      * home.jade (not currently used)
+      * index.jade
+      * layout.jade
+      * login.jade
+      * print.jade
+      * reset.jade
+      * signup.jade
+      * trip.jade
+    * router.js: application and API REST routes.
+* Procfile: required file by Heroku for deployment.
+* README.md: the file you are reading.
+* app.js: file for the server creation.
+* package.json: our Node.js project dependencies.
