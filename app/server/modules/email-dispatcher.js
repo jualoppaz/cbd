@@ -25,15 +25,13 @@ EM.dispatchResetPasswordLink = function(account, callback)
 
 EM.composeEmail = function(o)
 {
-	//var link = 'http://cbd.herokuapp.com/reset-password?e='+o.email+'&p='+o.pass;
-
-    var link = 'http://localhost:3000/reset-password?e='+o.email+'&p='+o.pass;
+	var link = 'http://cbd.herokuapp.com/reset-password?e='+o.email+'&p='+o.pass;
 
     /*
 
-    To try this in localhost you must put something like:
+    To try the app in localhost you must use this var
 
-        var link = 'localhost:3000/reset-password?e='+o.email+'&p='+o.pass;
+        var link = 'http://localhost:3000/reset-password?e='+o.email+'&p='+o.pass;
 
     You can also put your own deployed application
 
