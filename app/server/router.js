@@ -275,7 +275,7 @@ module.exports = function(app) {
 			} else{
 	// save the user's email in a session instead of sending to the client //
 				req.session.reset = { email:email, passHash:passH };
-				res.render('reset', { title : 'Reset Password' });
+				res.render('reset', { title : 'Reestablecer contraseña' });
 			}
 		})
 	});

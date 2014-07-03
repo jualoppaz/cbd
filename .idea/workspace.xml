@@ -26,25 +26,16 @@
       <file leaf-file-name="email-dispatcher.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/server/modules/email-dispatcher.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0" vertical-offset="393" max-vertical-offset="901">
+            <state line="32" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="901">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data-base-manager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
+      <file leaf-file-name="email-settings.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/server/modules/email-settings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5321">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="22" selection-start="3252" selection-end="3252" vertical-scroll-proportion="0.3618881" vertical-offset="1238" max-vertical-offset="3808">
+            <state line="5" column="44" selection-start="124" selection-end="124" vertical-scroll-proportion="0.2093596" vertical-offset="0" max-vertical-offset="406">
               <folding />
             </state>
           </provider>
@@ -94,7 +85,6 @@
         <option value="$PROJECT_DIR$/app/public/css/style.styl" />
         <option value="$PROJECT_DIR$/app/public/css/style.css" />
         <option value="$PROJECT_DIR$/app/server/views/trip.jade" />
-        <option value="$PROJECT_DIR$/app/server/router.js" />
         <option value="$PROJECT_DIR$/app/public/js/angular/angularTrip.js" />
         <option value="$PROJECT_DIR$/app/public/js/angular/angularDiagrams.js" />
         <option value="$PROJECT_DIR$/app/public/js/controllers/diagramsController.js" />
@@ -105,12 +95,13 @@
         <option value="$PROJECT_DIR$/app/server/views/layout.jade" />
         <option value="$PROJECT_DIR$/app/public/js/views/signup.js" />
         <option value="$PROJECT_DIR$/app/public/js/views/reset.js" />
-        <option value="$PROJECT_DIR$/app/server/views/modals/reset-password.jade" />
         <option value="$PROJECT_DIR$/app/server/views/modals/alert.jade" />
         <option value="$PROJECT_DIR$/app/server/views/modals/lost-password.jade" />
         <option value="$PROJECT_DIR$/app/server/modules/email-dispatcher.js" />
         <option value="$PROJECT_DIR$/app/server/modules/email-settings.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/app/server/router.js" />
+        <option value="$PROJECT_DIR$/app/server/views/modals/reset-password.jade" />
       </list>
     </option>
   </component>
@@ -370,7 +361,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3207547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3207547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.238653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -655,14 +646,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/server/views/modals/reset-password.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="49" selection-start="289" selection-end="297" vertical-scroll-proportion="0.31233597" vertical-offset="0" max-vertical-offset="381">
+        <state line="5" column="42" selection-start="229" selection-end="229" vertical-scroll-proportion="0.22309712" vertical-offset="0" max-vertical-offset="381">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/server/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="278" column="13" selection-start="7994" selection-end="7994" vertical-scroll-proportion="0.77952754" vertical-offset="4429" max-vertical-offset="9180">
+        <state line="277" column="59" selection-start="7982" selection-end="7982" vertical-scroll-proportion="0.33251232" vertical-offset="4574" max-vertical-offset="9180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="22" selection-start="3252" selection-end="3252" vertical-scroll-proportion="0.5625" vertical-offset="1238" max-vertical-offset="3808">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="579" selection-end="579" vertical-scroll-proportion="0.7536946" vertical-offset="0" max-vertical-offset="5321">
           <folding />
         </state>
       </provider>
@@ -677,20 +682,6 @@
     <entry file="file://$PROJECT_DIR$/app/server/modules/email-settings.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="44" selection-start="124" selection-end="124" vertical-scroll-proportion="0.2093596" vertical-offset="0" max-vertical-offset="406">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5321">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="22" selection-start="3252" selection-end="3252" vertical-scroll-proportion="0.3618881" vertical-offset="1238" max-vertical-offset="3808">
           <folding />
         </state>
       </provider>
