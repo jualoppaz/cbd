@@ -23,15 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="email-dispatcher.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/server/modules/email-dispatcher.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="760" selection-end="760" vertical-scroll-proportion="0.49753696" vertical-offset="376" max-vertical-offset="901">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="reset.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/public/js/views/reset.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -41,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="email-settings.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="email-settings.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/server/modules/email-settings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="30" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+            <state line="14" column="4" selection-start="365" selection-end="365" vertical-scroll-proportion="0.5862069" vertical-offset="0" max-vertical-offset="406">
               <folding />
             </state>
           </provider>
@@ -114,12 +105,12 @@
         <option value="$PROJECT_DIR$/app/server/views/modals/lost-password.jade" />
         <option value="$PROJECT_DIR$/app/server/router.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/app/server/modules/email-settings.js" />
         <option value="$PROJECT_DIR$/app/public/js/form-validators/resetValidator.js" />
         <option value="$PROJECT_DIR$/app/server/views/modals/reset-password.jade" />
         <option value="$PROJECT_DIR$/app/public/js/views/reset.js" />
         <option value="$PROJECT_DIR$/app/public/js/views/login.js" />
         <option value="$PROJECT_DIR$/app/server/modules/email-dispatcher.js" />
+        <option value="$PROJECT_DIR$/app/server/modules/email-settings.js" />
       </list>
     </option>
   </component>
@@ -672,6 +663,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/modules/email-dispatcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="760" selection-end="760" vertical-scroll-proportion="1.4236454" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/views/reset.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="67" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
@@ -681,14 +679,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/server/modules/email-settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="30" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/modules/email-dispatcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="760" selection-end="760" vertical-scroll-proportion="0.49753696" vertical-offset="376" max-vertical-offset="901">
+        <state line="14" column="4" selection-start="365" selection-end="365" vertical-scroll-proportion="0.5862069" vertical-offset="0" max-vertical-offset="406">
           <folding />
         </state>
       </provider>
