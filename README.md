@@ -51,7 +51,7 @@ El proyecto está estructurado de la siguiente forma:
         * angularIndex.js
         * angularTrip.js
       * <b>controllers</b>: controladores de jQuery para las plantillas.
-        * diagramController.js
+        * diagramsController.js
         * homeController.js (sustituido por indexController.js)
         * indexController.js
         * loginController.js
@@ -63,7 +63,7 @@ El proyecto está estructurado de la siguiente forma:
         * loginValidator.js
         * resetValidator.js
       * <b>views</b>: llamada a las funciones jQuery de las vistas.
-        * diagram.js
+        * diagrams.js
         * home.js
         * index.js
         * login.js
@@ -172,7 +172,7 @@ The project is structure as follows:
         * loginValidator.js
         * resetValidator.js
       * <b>views</b>: calls to jQuery functions views.
-        * diagram.js
+        * diagrams.js
         * home.js
         * index.js
         * login.js

@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-	var ic = new DiagramController();
+	var ic = new DiagramsController();
 
 	$('#name-tf').focus();
 	$('#github-banner').css('top', '41px');

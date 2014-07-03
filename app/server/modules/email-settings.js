@@ -1,14 +1,14 @@
 
 module.exports = {
-	/*
-
-	You must uncomment this code and fill it with your mail credentials
-	
-	Fill this fields with your mail credentials
 	
 	host		: 'smtp.gmail.com',
-	user 		: 'your-email-address@gmail.com',
-	password 	: 'your-email-password',
-	sender		: 'Your Name <your-email-address@gmail.com>'
-	*/
+	user 		: 'juanmalp1992@gmail.com',
+	password 	: process.env.EMAIL_PASSWORD,
+	sender		: 'Juanma <juanmalp1992@gmail.com>'
+
+    /*
+
+    You must fill this fields with your mail credentials but the "host" field.
+
+     */
 }

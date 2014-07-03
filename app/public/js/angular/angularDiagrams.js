@@ -1,6 +1,6 @@
-var angularDiagram = angular.module('angularDiagram', []);
+var angularDiagrams = angular.module('angularDiagrams', []);
 
-angularDiagram.controller('diagramController', function($scope, $filter, $http) {
+angularDiagrams.controller('diagramsController', function($scope, $filter, $http) {
     /*
     $scope.trip = {};
     $scope.free = "";

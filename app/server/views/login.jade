@@ -18,9 +18,11 @@ block content
                     input(type="checkbox", checked='checked')
                 div.clear-fix
                 hr
-                div.btm-links.centrar
-                    //a(href='#')#forgot-password ¿Olvidaste tu contraseña?
-                    a(href='/signup')#create-account Cree una cuenta
+                div.btm-links
+                    div(style="float:left")
+                        a(href='#')#forgot-password ¿Olvidaste tu contraseña?
+                    div.derecha
+                        a(href='/signup')#create-account Cree una cuenta
     include modals/alert
     include modals/lost-password
 

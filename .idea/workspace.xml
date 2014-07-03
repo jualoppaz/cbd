@@ -22,7 +22,35 @@
     <favorites_list name="WS_CBD" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="email-dispatcher.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/server/modules/email-dispatcher.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0" vertical-offset="393" max-vertical-offset="901">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data-base-manager.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5321">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="22" selection-start="3252" selection-end="3252" vertical-scroll-proportion="0.3618881" vertical-offset="1238" max-vertical-offset="3808">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -32,11 +60,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/views/partials/login.jade" />
-        <option value="$PROJECT_DIR$/server/models/User.js" />
-        <option value="$PROJECT_DIR$/client/css/font-awesome.min.css" />
-        <option value="$PROJECT_DIR$/client/views/partials/home.jade" />
-        <option value="$PROJECT_DIR$/client/js/controllers.js" />
         <option value="$PROJECT_DIR$/client/js/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app/public/js/views/index.js" />
@@ -47,34 +70,25 @@
         <option value="$PROJECT_DIR$/app/server/modules/account-manager.js" />
         <option value="$PROJECT_DIR$/app/public/js/angular/angularTravel.js" />
         <option value="$PROJECT_DIR$/app/public/js/angular.js" />
-        <option value="$PROJECT_DIR$/app/public/js/views/reset.js" />
         <option value="$PROJECT_DIR$/app/public/js/controllers/indexController.js" />
         <option value="$PROJECT_DIR$/app/public/js/controllers/homeController.js" />
         <option value="$PROJECT_DIR$/app/public/js/views/trip.js" />
         <option value="$PROJECT_DIR$/app/public/js/controllers/tripController.js" />
-        <option value="$PROJECT_DIR$/app/server/views/layout.jade" />
         <option value="$PROJECT_DIR$/app/public/vendor/bootstrap-modal.js" />
         <option value="$PROJECT_DIR$/app/server/views/modals/form-errors.jade" />
-        <option value="$PROJECT_DIR$/app/server/views/modals/alert.jade" />
         <option value="$PROJECT_DIR$/app/public/js/controllers/signupController.js" />
         <option value="$PROJECT_DIR$/app/public/js/form-validators/accountValidator.js" />
         <option value="$PROJECT_DIR$/app/public/js/angular/angularIndex.js" />
-        <option value="$PROJECT_DIR$/app/public/js/views/diagrams.js" />
         <option value="$PROJECT_DIR$/app/public/js/controllers/diagramController.js" />
         <option value="$PROJECT_DIR$/app/public/js/angular/angularDiagram.js" />
         <option value="$PROJECT_DIR$/app/server/modules/data-base-manager.js" />
         <option value="$PROJECT_DIR$/app/public/js/form-validators/resetValidator.js" />
         <option value="$PROJECT_DIR$/app/public/js/form-validators/emailValidator.js" />
-        <option value="$PROJECT_DIR$/app/server/views/modals/lost-password.jade" />
-        <option value="$PROJECT_DIR$/app/server/modules/email-dispatcher.js" />
         <option value="$PROJECT_DIR$/app/server/views/index.jade" />
         <option value="$PROJECT_DIR$/app/server/views/account.jade" />
         <option value="$PROJECT_DIR$/app/server/views/404.jade" />
-        <option value="$PROJECT_DIR$/app/server/views/login.jade" />
         <option value="$PROJECT_DIR$/app/public/js/views/login.js" />
-        <option value="$PROJECT_DIR$/app/public/js/views/signup.js" />
         <option value="$PROJECT_DIR$/app/public/css/font-awesome.css" />
-        <option value="$PROJECT_DIR$/app/server/views/diagrams.jade" />
         <option value="$PROJECT_DIR$/app/public/js/form-validators/loginValidator.js" />
         <option value="$PROJECT_DIR$/app/public/css/starter-template.css" />
         <option value="$PROJECT_DIR$/app/public/css/style.styl" />
@@ -82,7 +96,21 @@
         <option value="$PROJECT_DIR$/app/server/views/trip.jade" />
         <option value="$PROJECT_DIR$/app/server/router.js" />
         <option value="$PROJECT_DIR$/app/public/js/angular/angularTrip.js" />
+        <option value="$PROJECT_DIR$/app/public/js/angular/angularDiagrams.js" />
+        <option value="$PROJECT_DIR$/app/public/js/controllers/diagramsController.js" />
+        <option value="$PROJECT_DIR$/app/public/js/views/diagrams.js" />
+        <option value="$PROJECT_DIR$/app/server/views/diagrams.jade" />
+        <option value="$PROJECT_DIR$/app/server/views/login.jade" />
+        <option value="$PROJECT_DIR$/app/server/modules/email-settings-mine.js" />
+        <option value="$PROJECT_DIR$/app/server/views/layout.jade" />
+        <option value="$PROJECT_DIR$/app/public/js/views/signup.js" />
+        <option value="$PROJECT_DIR$/app/public/js/views/reset.js" />
+        <option value="$PROJECT_DIR$/app/server/views/modals/reset-password.jade" />
+        <option value="$PROJECT_DIR$/app/server/views/modals/alert.jade" />
+        <option value="$PROJECT_DIR$/app/server/views/modals/lost-password.jade" />
+        <option value="$PROJECT_DIR$/app/server/modules/email-dispatcher.js" />
         <option value="$PROJECT_DIR$/app/server/modules/email-settings.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -118,7 +146,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -242,201 +269,10 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="form-validators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WS_CBD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -448,11 +284,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WS\WS_CBD\app\server\modules" />
       <recent name="D:\WS\WS_CBD\app\public\js\angular" />
       <recent name="D:\WS\WS_CBD\app\public\js\controllers" />
       <recent name="D:\WS\WS_CBD\app\public\js\views" />
       <recent name="D:\WS\WS_CBD\app\server\views" />
-      <recent name="D:\WS\WS_CBD\app\public\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\WS\WS_CBD\app\public\fonts" />
@@ -463,14 +299,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -481,15 +309,23 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -529,13 +365,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3207547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.238653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.238653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3207547" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -543,11 +380,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3207547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -569,26 +405,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/server/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="510" column="21" selection-start="15186" selection-end="15186" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/js/angular/angularTrip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="2203" selection-end="2203" vertical-scroll-proportion="0.0" vertical-offset="1292" max-vertical-offset="3162" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/views/trip.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="98" selection-start="3922" selection-end="3922" vertical-scroll-proportion="0.0" vertical-offset="932" max-vertical-offset="1751" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="293" column="29" selection-start="6936" selection-end="6936" vertical-scroll-proportion="0.0" vertical-offset="4711" max-vertical-offset="5321" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/server/modules/country-list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-6.1262627" vertical-offset="3639" max-vertical-offset="4233" />
@@ -597,11 +413,6 @@
     <entry file="file://$PROJECT_DIR$/app/public/vendor/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="581" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/js/views/reset.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="0.5948718" vertical-offset="142" max-vertical-offset="544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/controllers/loginController.js">
@@ -622,11 +433,6 @@
     <entry file="file://$PROJECT_DIR$/app/public/js/views/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="57" selection-start="410" selection-end="410" vertical-scroll-proportion="0.6280788" vertical-offset="0" max-vertical-offset="510" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="60" selection-start="406" selection-end="406" vertical-scroll-proportion="0.26153848" vertical-offset="0" max-vertical-offset="585" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/server/views/modals/confirm.jade">
@@ -674,21 +480,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/js/views/diagrams.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="24" selection-start="53" selection-end="53" vertical-scroll-proportion="0.083606556" vertical-offset="0" max-vertical-offset="610" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/js/controllers/diagramsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="24" selection-start="349" selection-end="349" vertical-scroll-proportion="0.10819672" vertical-offset="189" max-vertical-offset="799" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/js/angular/angularDiagrams.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="3" selection-start="817" selection-end="817" vertical-scroll-proportion="0.7770492" vertical-offset="19" max-vertical-offset="629" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/controllers/tripController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="9" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799" />
@@ -699,34 +490,14 @@
         <state line="8" column="8" selection-start="124" selection-end="124" vertical-scroll-proportion="0.22295082" vertical-offset="0" max-vertical-offset="782" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/views/modals/alert.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1295" selection-end="1702" vertical-scroll-proportion="-3.32" vertical-offset="427" max-vertical-offset="935" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/form-validators/resetValidator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="59" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/views/modals/reset-password.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="382" selection-end="382" vertical-scroll-proportion="0.425" vertical-offset="0" max-vertical-offset="360" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/form-validators/emailValidator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="64" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="748" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/modules/email-dispatcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="57" selection-start="734" selection-end="734" vertical-scroll-proportion="0.64675325" vertical-offset="261" max-vertical-offset="714" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/views/modals/lost-password.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="63" selection-start="1046" selection-end="1046" vertical-scroll-proportion="-9.16" vertical-offset="162" max-vertical-offset="612" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/server/views/signup.jade">
@@ -754,24 +525,9 @@
         <state line="3" column="24" selection-start="53" selection-end="53" vertical-scroll-proportion="0.083606556" vertical-offset="0" max-vertical-offset="610" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/js/views/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="57" selection-start="783" selection-end="783" vertical-scroll-proportion="0.30327868" vertical-offset="308" max-vertical-offset="918" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/server/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="42" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.2937063" vertical-offset="359" max-vertical-offset="1020" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/js/views/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="4" selection-start="816" selection-end="816" vertical-scroll-proportion="0.752459" vertical-offset="0" max-vertical-offset="969" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/views/login.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="61" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.63931626" vertical-offset="0" max-vertical-offset="680" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/form-validators/accountValidator.js">
@@ -784,29 +540,9 @@
         <state line="1415" column="24" selection-start="39451" selection-end="39457" vertical-scroll-proportion="0.33216783" vertical-offset="23865" max-vertical-offset="359941" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/views/diagrams.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="52" selection-start="5382" selection-end="5382" vertical-scroll-proportion="0.37587413" vertical-offset="1672" max-vertical-offset="2278" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/public/js/form-validators/loginValidator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="1" selection-start="930" selection-end="930" vertical-scroll-proportion="0.74876845" vertical-offset="274" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="293" column="29" selection-start="6936" selection-end="6936" vertical-scroll-proportion="0.44262296" vertical-offset="4711" max-vertical-offset="5321" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="510" column="21" selection-start="15186" selection-end="15186" vertical-scroll-proportion="0.0" vertical-offset="8578" max-vertical-offset="9180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/server/modules/email-settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="71" selection-start="94" selection-end="94" vertical-scroll-proportion="0.16748768" vertical-offset="0" max-vertical-offset="406" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/server/views/trip.jade">
@@ -817,6 +553,146 @@
     <entry file="file://$PROJECT_DIR$/app/public/js/angular/angularTrip.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="37" selection-start="2788" selection-end="2788" vertical-scroll-proportion="0.6699507" vertical-offset="1292" max-vertical-offset="3162" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/js/angular/angularDiagrams.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="36" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/js/views/diagrams.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="27" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/views/diagrams.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="48" selection-start="6073" selection-end="6073" vertical-scroll-proportion="-11.16" vertical-offset="1897" max-vertical-offset="2278">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="41" selection-start="64" selection-end="64" vertical-scroll-proportion="-1.36" vertical-offset="0" max-vertical-offset="136">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/js/controllers/diagramsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="17" selection-start="18" selection-end="18" vertical-scroll-proportion="0.04187192" vertical-offset="0" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/css/starter-template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1735" column="0" selection-start="28291" selection-end="28291" vertical-scroll-proportion="0.0" vertical-offset="29364" max-vertical-offset="31127">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/views/login.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="43" selection-start="922" selection-end="922" vertical-scroll-proportion="0.21784776" vertical-offset="274" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/views/reset.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="14" selection-start="15" selection-end="15" vertical-scroll-proportion="0.044619422" vertical-offset="0" max-vertical-offset="381">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/js/views/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="19" selection-start="687" selection-end="691" vertical-scroll-proportion="0.33333334" vertical-offset="264" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/js/views/reset.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="6" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/js/views/signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="49" selection-start="408" selection-end="408" vertical-scroll-proportion="10.6" vertical-offset="486" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/views/modals/lost-password.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="43" selection-start="1393" selection-end="1393" vertical-scroll-proportion="0.6430446" vertical-offset="231" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/views/modals/alert.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="31" selection-start="2093" selection-end="2093" vertical-scroll-proportion="1.5616798" vertical-offset="204" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="8" selection-start="113" selection-end="113" vertical-scroll-proportion="0.22309712" vertical-offset="0" max-vertical-offset="381">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/views/modals/reset-password.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="49" selection-start="289" selection-end="297" vertical-scroll-proportion="0.31233597" vertical-offset="0" max-vertical-offset="381">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="278" column="13" selection-start="7994" selection-end="7994" vertical-scroll-proportion="0.77952754" vertical-offset="4429" max-vertical-offset="9180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/modules/email-dispatcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0" vertical-offset="393" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/modules/email-settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="44" selection-start="124" selection-end="124" vertical-scroll-proportion="0.2093596" vertical-offset="0" max-vertical-offset="406">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5321">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="22" selection-start="3252" selection-end="3252" vertical-scroll-proportion="0.3618881" vertical-offset="1238" max-vertical-offset="3808">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

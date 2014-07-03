@@ -2,8 +2,8 @@
 extends layout
 
 block content
-    div(ng-app="angularDiagram")
-        div(ng-controller="diagramController")
+    div(ng-app="angularDiagrams")
+        div(ng-controller="diagramsController")
             header.navbar.navbar-fixed-top.navbar-inverse
                 div.navbar-inner
                     div.container-fluid
@@ -122,8 +122,8 @@ block scripts
     script(src='/vendor/jquery.form.js')
     script(src='/vendor/bootstrap-modal.js')
     script(src='/vendor/bootstrap-transition.js')
-    script(src='/js/views/diagram.js')
-    script(src='/js/controllers/diagramController.js')
+    script(src='/js/views/diagrams.js')
+    script(src='/js/controllers/diagramsController.js')
     script(src='/js/form-validators/accountValidator.js')
     script(src='/js/angular.js')
-    script(src='/js/angular/angularDiagram.js')
+    script(src='/js/angular/angularDiagrams.js')

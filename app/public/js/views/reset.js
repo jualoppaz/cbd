@@ -13,15 +13,15 @@ $(document).ready(function(){
 			}
 		},
 		success	: function(responseText, status, xhr, $form){
-			rv.showSuccess("Your password has been reset.");
+			rv.showSuccess("Su contraseña ha sido restaurada correctamente.");
 			setTimeout(function(){ window.location.href = '/'; }, 10000);
 		},
 		error : function(){
-			rv.showAlert("I'm sorry something went wrong, please try again.");
+			rv.showAlert("Algo salió mal. Inténtelo de nuevo.");
 		}
 	});
 
 	$('#set-password').modal('show');
-	$('#set-password').on('shown', function(){ $('#pass-tf').focus(); })
+	//$('#set-password').on('shown', function(){ $('#pass-tf').focus(); })
 
 });

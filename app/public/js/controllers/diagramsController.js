@@ -1,5 +1,5 @@
 
-function DiagramController()
+function DiagramsController()
 {
 
 // bind event listeners to button clicks //
