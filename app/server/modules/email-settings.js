@@ -3,7 +3,7 @@ module.exports = {
 	
 	host		: 'smtp.gmail.com',
 	user 		: 'juanmalp1992@gmail.com',
-	password 	: process.env.EMAIL_PASSWORD,
+	password 	: 'juanmita14',
 	sender		: 'Juanma <juanmalp1992@gmail.com>'
 
     /*

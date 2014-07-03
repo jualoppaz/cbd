@@ -42,10 +42,10 @@ $(document).ready(function(){
 			}
 		},
 		success	: function(responseText, status, xhr, $form){
-			ev.showEmailSuccess("Check your email on how to reset your password.");
+			ev.showEmailSuccess("Consulte el email que ha sido enviado a la cuenta indicada.");
 		},
 		error : function(){
-			ev.showEmailAlert("Sorry. There was a problem, please try again later.");
+			ev.showEmailAlert("Lo sentimos. Algo ha salido mal. Inténtelo de nuevo más tarde.");
 		}
 	});
 	

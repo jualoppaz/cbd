@@ -25,7 +25,9 @@ EM.dispatchResetPasswordLink = function(account, callback)
 
 EM.composeEmail = function(o)
 {
-	var link = 'http://cbd.herokuapp.com/reset-password?e='+o.email+'&p='+o.pass;
+	//var link = 'http://cbd.herokuapp.com/reset-password?e='+o.email+'&p='+o.pass;
+
+    var link = 'http://localhost:3000/reset-password?e='+o.email+'&p='+o.pass;
 
     /*
 

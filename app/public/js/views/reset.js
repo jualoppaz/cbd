@@ -14,7 +14,7 @@ $(document).ready(function(){
 		},
 		success	: function(responseText, status, xhr, $form){
 			rv.showSuccess("Su contraseña ha sido restaurada correctamente.");
-			setTimeout(function(){ window.location.href = '/'; }, 10000);
+			setTimeout(function(){ window.location.href = '/'; }, 4000);
 		},
 		error : function(){
 			rv.showAlert("Algo salió mal. Inténtelo de nuevo.");

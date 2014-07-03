@@ -4,7 +4,7 @@ function ResetValidator(){
 // modal window to allow users to reset their password //
     this.setPassword = $('#set-password');
     this.setPassword.modal({ show : false, keyboard : false, backdrop : 'static' });
-    this.setPasswordAlert = $('#set-password .alert');
+    this.setPasswordAlert = $('#content .alert');
 
     $('#get-credentials').modal('show');
 }
@@ -14,7 +14,7 @@ ResetValidator.prototype.validatePassword = function(s)
 	if (s.length >= 6){
 		return true;
 	}	else{
-		this.showAlert('Password Should Be At Least 6 Characters');
+		this.showAlert('La contraseña debe tener, al menos, 6 caracteres.');
 		return false;
 	}
 }
