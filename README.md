@@ -21,6 +21,7 @@ Como usuario podemos:
 
 * Registrarnos en la aplicación.
 * Loguearnos en la aplicación.
+* Reestablecer nuestra contraseña.
 * Listar todas las excursiones disponibles.
 * Buscar excursiones por palabras contenidas en el título o en la descripción.
 * Consultar la información asociada a una excursión.
@@ -129,6 +130,7 @@ As user we can:
 
 * Create an account.
 * Log in the application.
+* Reset our password.
 * Retrieve all the avaible trips.
 * Search for any trip that contains the specified word in the title or description.
 * See all the related information about the selected trip.

@@ -35,7 +35,7 @@
       <file leaf-file-name="email-settings.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/server/modules/email-settings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="44" selection-start="124" selection-end="124" vertical-scroll-proportion="0.2093596" vertical-offset="0" max-vertical-offset="406">
+            <state line="13" column="1" selection-start="269" selection-end="269" vertical-scroll-proportion="0.3622951" vertical-offset="0" max-vertical-offset="610">
               <folding />
             </state>
           </provider>
@@ -99,9 +99,9 @@
         <option value="$PROJECT_DIR$/app/server/views/modals/lost-password.jade" />
         <option value="$PROJECT_DIR$/app/server/modules/email-dispatcher.js" />
         <option value="$PROJECT_DIR$/app/server/modules/email-settings.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/server/router.js" />
         <option value="$PROJECT_DIR$/app/server/views/modals/reset-password.jade" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -361,7 +361,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3207547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3207547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.238653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -658,13 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="22" selection-start="3252" selection-end="3252" vertical-scroll-proportion="0.5625" vertical-offset="1238" max-vertical-offset="3808">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/server/modules/data-base-manager.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="579" selection-end="579" vertical-scroll-proportion="0.7536946" vertical-offset="0" max-vertical-offset="5321">
@@ -679,9 +672,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="21" selection-start="4763" selection-end="4763" vertical-scroll-proportion="0.7132867" vertical-offset="1836" max-vertical-offset="3842">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/server/modules/email-settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="44" selection-start="124" selection-end="124" vertical-scroll-proportion="0.2093596" vertical-offset="0" max-vertical-offset="406">
+        <state line="13" column="1" selection-start="269" selection-end="269" vertical-scroll-proportion="0.3622951" vertical-offset="0" max-vertical-offset="610">
           <folding />
         </state>
       </provider>
