@@ -1,7 +1,12 @@
 ##Español
 La base de este proyecto fue tomada de https://github.com/braitsch/node-login .
 
-Puedes probar la aplicación en: http://cbd.herokuapp.com
+Puedes probar la aplicación en: http://cbd.herokuapp.com .
+
+También está disponible la documentación de este trabajo, donde se estudian estas tecnologías y se realizan una serie de comparaciones.
+
+###Justificación
+Este proyecto surge como trabajo para la asignatura "Complementos de Bases de Datos" del Grado en Ingeniería Informática - Ingeniería del Software de la Universidad de Sevilla.
 
 ###Temática
 En este proyecto puedes loguearte como alumno de un colegio y ver las excursiones disponibles por realizar.
@@ -112,7 +117,12 @@ El proyecto está estructurado de la siguiente forma:
 ##English##
 This project was forked by https://github.com/braitsch/node-login .
 
-You can try the app in: http://cbd.herokuapp.com
+You can try the app in: http://cbd.herokuapp.com .
+
+You can also download the generated documentation about this project, where all of these technologies are studied and compared with other technologies.
+
+###Justification
+This project was born as a deliverable for the "Complementos de Bases de Datos" subject in Grado en Ingeniería Informática - Ingeniería del Software offered by Universidad de Sevilla.
 
 ###Subject
 In this application you can log in as a school user and you can see the avaible school trips. If you like any trip you could sign up for the trip, see all the attendants or comment it.

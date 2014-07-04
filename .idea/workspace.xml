@@ -22,7 +22,17 @@
     <favorites_list name="WS_CBD" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="125" column="0" selection-start="4898" selection-end="4898" vertical-scroll-proportion="0.5541958" vertical-offset="1808" max-vertical-offset="4012">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -68,7 +78,6 @@
         <option value="$PROJECT_DIR$/app/public/js/views/signup.js" />
         <option value="$PROJECT_DIR$/app/server/views/modals/alert.jade" />
         <option value="$PROJECT_DIR$/app/server/views/modals/lost-password.jade" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/public/js/form-validators/resetValidator.js" />
         <option value="$PROJECT_DIR$/app/server/views/modals/reset-password.jade" />
         <option value="$PROJECT_DIR$/app/public/js/views/reset.js" />
@@ -83,6 +92,7 @@
         <option value="$PROJECT_DIR$/app/server/views/diagrams.jade" />
         <option value="$PROJECT_DIR$/app/server/views/index.jade" />
         <option value="$PROJECT_DIR$/app/server/views/trip.jade" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -337,13 +347,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.238653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.238653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3207547" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -547,11 +557,6 @@
         <state line="18" column="0" selection-start="579" selection-end="579" vertical-scroll-proportion="0.7536946" vertical-offset="0" max-vertical-offset="5321" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="21" selection-start="4763" selection-end="4763" vertical-scroll-proportion="0.7132867" vertical-offset="1836" max-vertical-offset="3842" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/server/views/modals/alert.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="31" selection-start="2093" selection-end="2093" vertical-scroll-proportion="2.097113" vertical-offset="0" max-vertical-offset="952" />
@@ -642,6 +647,13 @@
     <entry file="file://$PROJECT_DIR$/app/public/js/angular/angularTrip.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="112" column="25" selection-start="3285" selection-end="3285" vertical-scroll-proportion="0.6131148" vertical-offset="1530" max-vertical-offset="3162">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="0" selection-start="4898" selection-end="4898" vertical-scroll-proportion="0.5541958" vertical-offset="1808" max-vertical-offset="4012">
           <folding />
         </state>
       </provider>
