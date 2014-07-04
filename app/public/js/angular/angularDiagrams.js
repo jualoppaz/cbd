@@ -20,9 +20,12 @@ angularDiagrams.controller('diagramsController', function($scope, $filter, $http
             console.log('Error: ' + data);
         });
     */
+
+    $scope.loguedUser = {};
+
     $http.get('/api/user')
         .success(function(data) {
-            $scope.username = data;
+            $scope.loguedUser = data;
         })
         .error(function(data){
 

@@ -1,4 +1,3 @@
-
 extends layout
 
 block content
@@ -15,9 +14,14 @@ block content
                                 span.icon-bar
                             a(href="/index").navbar-brand Inicio
                         nav.collapse.navbar-collapse.bs-navbar-collapse(role="navigation")
+                            ul.nav.navbar-nav
+                                li
+                                    a(href="https://github.com/jualoppaz/cbd/trabajo.pdf", target="_blank").seccion Trabajo
+                                li
+                                    a(href="/diagrams").seccion Diagramas
                             ul.nav.navbar-nav.navbar-right
                                 li
-                                    a(ng-bind-template="¡Hola, {{username}}!")
+                                    a(ng-bind-template="¡Hola, {{loguedUser.user}}!")
                                 li
                                     button#btn-logout.btn.btn-primary(data-toggle="modal", data-target="#myModal", style="margin-top:7px")
                                         i.icon-lock.icon-white

@@ -2,7 +2,7 @@ var angularIndex = angular.module('angularIndex', []);
 
 function indexController($scope, $http) {
     $scope.trips = {};
-    $scope.username = "";
+    $scope.loguedUser = {};
 
     // Cuando se cargue la página, pide del API todas las excursiones
     $http.get('/api/trips')
@@ -16,7 +16,7 @@ function indexController($scope, $http) {
 
     $http.get('/api/user')
         .success(function(data) {
-            $scope.username = data;
+            $scope.loguedUser = data;
         })
         .error(function(data){
 

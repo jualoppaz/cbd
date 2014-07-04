@@ -4,7 +4,7 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
     $scope.formData = {};
     $scope.trip = {};
     $scope.free = "";
-    $scope.username = "";
+    $scope.loguedUser = {};
     $scope.users = {};
     $scope.comments = {};
     $scope.commentError = false;
@@ -25,7 +25,7 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
 
     $http.get('/api/user')
         .success(function(data) {
-            $scope.username = data;
+            $scope.loguedUser = data;
         })
         .error(function(data){
 
@@ -109,7 +109,7 @@ angularTrip.controller('tripController', function($scope, $filter, $http) {
     $scope.usuarioInscrito = function(){
         if($scope.users){
             for(var i=0; i<$scope.users.length; i++){
-                if($scope.users[i].name == $scope.username){
+                if($scope.users[i].user == $scope.loguedUser.user){
                     return true;
                 }
             }

@@ -1764,9 +1764,10 @@ body{
     font-size: 25px !important;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover, .seccion:hover{
     background-color: #ffffff !important;
     color: #000000 !important;
+    font-weight: bold;
 }
 
 .sin-padding-izquierdo{

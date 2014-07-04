@@ -361,7 +361,11 @@ module.exports = function(app) {
         if(req.session.user == null){
             res.send("Esta función es sólo para usuarios logueados.");
         }else{
-            res.send(req.session.user.user);
+            var data = {
+                user : req.session.user.user,
+                name : req.session.user.name
+            };
+            res.send(JSON.stringify(data));
         }
     });
 
