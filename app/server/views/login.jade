@@ -3,7 +3,7 @@ extends layout
 
 block content
     div.login-form
-        div.col-md-4.col-md-offset-4(style="margin-top:20px")
+        div.col-md-4.col-md-offset-4
             form( method="post")#login-form.panel.panel-body
                 h1 Bienvenido
                 p.subheading Para acceder a la aplicación debe loguearse
@@ -23,6 +23,9 @@ block content
                         a(href='#')#forgot-password ¿Olvidaste tu contraseña?
                     div.derecha
                         a(href='/signup')#create-account Cree una cuenta
+                div.centrar(style="margin-top:5%")
+                    a(href="https://github.com/jualoppaz/cbd", target="_blank")
+                        i.fa.fa-github.fa-5x.gray
     include modals/alert
     include modals/lost-password
 

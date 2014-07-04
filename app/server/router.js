@@ -150,6 +150,15 @@ module.exports = function(app) {
         }
     });
 
+    app.get('/contact', function(req, res) {
+        if (req.session.user == null){
+            // if user is not logged-in redirect back to login page //
+            res.redirect('/');
+        }   else{
+            res.render('contact');
+        }
+    });
+
     app.post('/index', function(req, res){
         if (req.param('user') != undefined) {
             DBM.updateAccount({

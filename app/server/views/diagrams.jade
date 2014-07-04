@@ -20,6 +20,8 @@ block content
                                     a(href="https://github.com/jualoppaz/cbd/blob/master/trabajo.pdf", target="_blank").seccion Trabajo
                                 li
                                     a(href="/diagrams").seccion Diagramas
+                                li
+                                    a(href="/contact").seccion Contacto
                             ul.nav.navbar-nav.navbar-right
                                 li
                                     a(ng-bind-template="¡Hola, {{loguedUser.user}}!")
@@ -28,93 +30,104 @@ block content
                                         i.icon-lock.icon-white
                                         |  Cerrar sesión
 
-            div.panel.panel-body.col-md-12(style="padding-top: 100px; padding-bottom:100px")
-                div.col-md-2.centrar.col-md-offset-1
-                    div
-                        a(href="#")
-                            i.fa.fa-desktop.fa-5x
-                    div
-                        img(ng-src="/img/jade.png", height="100", width="200", style="margin-top: 20px; clear:both")
+            div.panel.panel-body.col-md-12(style="padding-bottom:100px")
                 div.centrar
-                    div(style="float:left").centrar
-                        a.red
-                            i.fa.fa-long-arrow-left.fa-3x
-                    div(style="float:left")
-                        a.red
-                            i.fa.fa-long-arrow-right.fa-3x
-                div.col-md-2.centrar
-                    div
-                        a(href="#").red
-                            i.fa.fa-code-fork.fa-5x
-                    div
-                        img(ng-src="/img/angular.png", height="100", width="100", style="margin-top: 20px")
-                div.centrar
-                    div(style="float:left").centrar
-                        a.green
-                            i.fa.fa-long-arrow-left.fa-3x
-                    div(style="float:left")
-                        a.red
-                            i.fa.fa-long-arrow-right.fa-3x
-                div.col-md-2.centrar
-                    div
-                        a(href="#").green
-                            i.fa.fa-building.fa-5x
-                    div
-                        img(ng-src="/img/nodejs.png", height="80", width="220", style="margin-top: 20px")
-                div.centrar
-                    div(style="float:left").centrar
-                        a.gray
-                            i.fa.fa-long-arrow-left.fa-3x
-                    div(style="float:left")
-                        a.green
-                            i.fa.fa-long-arrow-right.fa-3x
-                div.col-md-2.centrar
-                    div
-                        a(href="#").gray
-                            i.fa.fa-database.fa-5x
-                    div
-                        img(ng-src="/img/mongodb.png", height="80", width="200", style="margin-top: 20px")
+                    h1.blue Arquitectura de la aplicación
+                div(style="margin-top: 60px")
+                    div.col-md-2.centrar.col-md-offset-1
+                        div
+                            a(href="#")
+                                i.fa.fa-desktop.fa-5x
+                        div
+                            img(ng-src="/img/jade.png", height="100", width="200", style="margin-top: 20px; clear:both")
+                    div.centrar
+                        div(style="float:left").centrar
+                            a.red
+                                i.fa.fa-long-arrow-left.fa-3x
+                        div(style="float:left")
+                            a.red
+                                i.fa.fa-long-arrow-right.fa-3x
+                    div.col-md-2.centrar
+                        div
+                            a(href="#").red
+                                i.fa.fa-code-fork.fa-5x
+                        div
+                            img(ng-src="/img/angular.png", height="100", width="100", style="margin-top: 20px")
+                    div.centrar
+                        div(style="float:left").centrar
+                            a.green
+                                i.fa.fa-long-arrow-left.fa-3x
+                        div(style="float:left")
+                            a.red
+                                i.fa.fa-long-arrow-right.fa-3x
+                    div.col-md-2.centrar
+                        div
+                            a(href="#").green
+                                i.fa.fa-building.fa-5x
+                        div
+                            img(ng-src="/img/nodejs.png", height="80", width="220", style="margin-top: 20px")
+                    div.centrar
+                        div(style="float:left").centrar
+                            a.gray
+                                i.fa.fa-long-arrow-left.fa-3x
+                        div(style="float:left")
+                            a.green
+                                i.fa.fa-long-arrow-right.fa-3x
+                    div.col-md-2.centrar
+                        div
+                            a(href="#").gray
+                                i.fa.fa-database.fa-5x
+                        div
+                            img(ng-src="/img/mongodb.png", height="80", width="200", style="margin-top: 20px")
 
             //DIAGRAMA MONGODB
 
-            div.panel.panel-body.col-md-12(style="padding-top: 100px; padding-bottom:100px")
-                div.col-md-2.centrar.col-md-offset-4
-                    div
-                        a(href="#").gray
-                            i.fa.fa-database.fa-5x
-                    div
-                        img(ng-src="/img/mongodb.png", height="80", width="200", style="margin-top: 20px")
-                div(style="float:left")
-                    div(style="float:left; margin-right:40px")
-                        a(href="#").gray
-                            i.fa.fa-arrows-h.fa-5x
-                    div(style="float:left; margin-left:40px")
-                        a(href="#").blue
-                            i.fa.fa-file-text-o.fa-5x
+            div.panel.panel-body.col-md-12(style="padding-bottom:100px")
+                div.centrar
+                    h1.gray Base de datos
+                div(style="margin-top:60px")
+                    div.col-md-2.centrar.col-md-offset-4
+                        div
+                            a(href="#").gray
+                                i.fa.fa-database.fa-5x
+                        div
+                            img(ng-src="/img/mongodb.png", height="80", width="200", style="margin-top: 20px")
+                    div(style="float:left")
+                        div(style="float:left; margin-right:40px")
+                            a(href="#").gray
+                                i.fa.fa-arrows-h.fa-5x
+                        div(style="float:left; margin-left:40px")
+                            a(href="#").blue
+                                i.fa.fa-file-text-o.fa-5x
 
             // DIAGRAMA NODEJS
 
-            div.panel.panel-body.col-md-12(style="padding-top: 100px; padding-bottom:100px")
-                div.col-md-7.centrar.col-md-offset-3
-                    div(style="float:left")
-                        img(ng-src="/img/js.png", height="80", width="80", style="margin-top: 20px")
-                    div(style="float:left")
-                        a(href="#").blue
-                            i.fa.fa-plus.fa-5x(style="margin-top: 30px; margin-left: 40px; margin-right: 40px")
-                    div(style="float:left")
-                        a(href="#").green
-                            i.fa.fa-building.fa-5x(style="margin-top: 30px")
-                    div(style="float:left")
-                        a(href="#").red
-                            i.fa.fa-arrow-right.fa-5x(style="margin-top: 30px; margin-left: 40px; margin-right: 40px")
-                    div(style="float:left")
-                        img(ng-src="/img/nodejs.png", height="80", width="220", style="margin-top: 20px")
+            div.panel.panel-body.col-md-12(style="padding-bottom:100px")
+                div.centrar
+                    h1.green Lenguaje en el servidor
+                div(style="margin-top:60px")
+                    div.col-md-7.centrar.col-md-offset-3
+                        div(style="float:left")
+                            img(ng-src="/img/js.png", height="80", width="80", style="margin-top: 20px")
+                        div(style="float:left")
+                            a(href="#").blue
+                                i.fa.fa-plus.fa-5x(style="margin-top: 30px; margin-left: 40px; margin-right: 40px")
+                        div(style="float:left")
+                            a(href="#").green
+                                i.fa.fa-building.fa-5x(style="margin-top: 30px")
+                        div(style="float:left")
+                            a(href="#").red
+                                i.fa.fa-arrow-right.fa-5x(style="margin-top: 30px; margin-left: 40px; margin-right: 40px")
+                        div(style="float:left")
+                            img(ng-src="/img/nodejs.png", height="80", width="220", style="margin-top: 20px")
 
 
             // DIAGRAMA DEMO
 
-            div.panel.panel-body.col-md-12(style="padding-top: 100px; padding-bottom:100px")
-                div.col-md-7.centrar.col-md-offset-5
+            div.panel.panel-body.col-md-12(style="padding-bottom:100px")
+                div.centrar
+                    h1.blue Navegador
+                div.col-md-7.centrar.col-md-offset-5.centrar(style="padding-left:0px")
                     div(style="float:left")
                         a(href="#").blue
                             i.fa.fa-desktop.fa-10x(style="margin-top: 30px; margin-left: 40px; margin-right: 40px")
