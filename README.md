@@ -99,6 +99,7 @@ El proyecto está estructurado de la siguiente forma:
         * reset-password.jade
       * 404.jade
       * account.jade
+	  * contact.jade
       * diagrams.jade
       * home.jade (no usado actualmente)
       * index.jade
@@ -214,6 +215,7 @@ The project is structure as follows:
         * reset-password.jade
       * 404.jade
       * account.jade
+	  * contact.jade
       * diagrams.jade
       * home.jade (not currently used)
       * index.jade
